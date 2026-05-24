@@ -67,7 +67,7 @@ namespace eval ::tclcheck::builtins {
             eof          {1 1}
             fconfigure   {1 -1}
             fcopy        {2 -1}
-            fileevent    {2 3}
+            fileevent    {2 -1}
             file         {1 -1}
             glob         {1 -1}
             pwd          {0 0}
@@ -221,7 +221,7 @@ namespace eval ::tclcheck::builtins {
         }
         package {
             forget     {0 -1}
-            ifneeded   {2 3}
+            ifneeded   {2 -1}
             names      {0 0}
             present    {1 -1}
             provide    {1 2}

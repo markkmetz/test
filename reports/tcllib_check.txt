@@ -2500,7 +2500,6 @@ third_party/tcllib/modules/crc/sum.tcl:138: [WARN] (variables) Variable '$err' u
 third_party/tcllib/modules/crc/sum.tcl:139: [WARN] (variables) Variable '$err' used but never defined in this scope
 third_party/tcllib/modules/crc/sum.tcl:153: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/crc/sum.tcl:157: [WARN] (variables) Variable '$opts' used but never defined in this scope
-third_party/tcllib/modules/crc/sum.tcl:176: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/crc/sum.tcl:187: [WARN] (expressions) Unknown math function 'tok()' in expression
 third_party/tcllib/modules/crc/crc16.tcl:98: [WARN] (expressions) Unknown math function 'tcl_platform()' in expression
 third_party/tcllib/modules/crc/crc16.tcl:99: [WARN] (variables) Variable '$::tcl_platform' used but never defined in this scope
@@ -10010,7 +10009,6 @@ third_party/tcllib/modules/md5/md5x.tcl:574: [WARN] (variables) Variable '$err' 
 third_party/tcllib/modules/md5/md5x.tcl:586: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/md5/md5x.tcl:589: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/md5/md5x.tcl:596: [WARN] (procs) Call to unknown command 'MD5Init'
-third_party/tcllib/modules/md5/md5x.tcl:599: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/md5/md5x.tcl:599: [WARN] (procs) Call to unknown command 'MD5Init'
 third_party/tcllib/modules/md5/md5x.tcl:602: [WARN] (procs) Call to unknown command 'MD5Final'
 third_party/tcllib/modules/md5/md5x.tcl:605: [WARN] (procs) Call to unknown command 'MD5Update'
@@ -10025,7 +10023,6 @@ third_party/tcllib/modules/md5/md5x.tcl:651: [WARN] (procs) Call to unknown comm
 third_party/tcllib/modules/md5/md5x.tcl:654: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/md5/md5x.tcl:658: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/md5/md5x.tcl:665: [WARN] (procs) Call to unknown command 'HMACInit'
-third_party/tcllib/modules/md5/md5x.tcl:668: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/md5/md5x.tcl:668: [WARN] (procs) Call to unknown command 'HMACInit'
 third_party/tcllib/modules/md5/md5x.tcl:669: [WARN] (procs) Call to unknown command 'HMACUpdate'
 third_party/tcllib/modules/md5/md5x.tcl:670: [WARN] (procs) Call to unknown command 'HMACFinal'
@@ -11240,7 +11237,6 @@ third_party/tcllib/modules/ident/ident.tcl:55: [WARN] (variables) Variable '$ans
 third_party/tcllib/modules/ident/ident.tcl:55: [WARN] (variables) Variable '$answer' used but never defined in this scope
 third_party/tcllib/modules/ident/ident.tcl:55: [WARN] (procs) Call to unknown command 'parse'
 third_party/tcllib/modules/ident/ident.tcl:65: [WARN] (procs) Call to unknown command 'socket'
-third_party/tcllib/modules/ident/ident.tcl:78: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ident/ident.tcl:80: [WARN] (variables) Variable '$answer' used but never defined in this scope
 third_party/tcllib/modules/ident/ident.tcl:80: [WARN] (variables) Variable '$answer' used but never defined in this scope
 third_party/tcllib/modules/ident/ident.tcl:80: [WARN] (procs) Call to unknown command 'parse'
@@ -14630,15 +14626,12 @@ third_party/tcllib/modules/page/pkgIndex.tcl:30: [WARN] (variables) Variable '$d
 third_party/tcllib/modules/page/pkgIndex.tcl:31: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:31: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:31: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/page/pkgIndex.tcl:36: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/page/pkgIndex.tcl:36: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:36: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:36: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/page/pkgIndex.tcl:38: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/page/pkgIndex.tcl:38: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:38: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:38: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/page/pkgIndex.tcl:40: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/page/pkgIndex.tcl:40: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:40: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/page/pkgIndex.tcl:40: [WARN] (variables) Variable '$dir' used but never defined in this scope
@@ -15839,7 +15832,6 @@ third_party/tcllib/modules/snit/main2.tcl:3735: [WARN] (variables) Variable '$Sn
 third_party/tcllib/modules/snit/main2.tcl:3738: [WARN] (variables) Variable '$Snit_optionInfo' used but never defined in this scope
 third_party/tcllib/modules/snit/main2.tcl:3742: [WARN] (variables) Variable '$records' used but never defined in this scope
 third_party/tcllib/modules/snit/main2.tcl:3744: [WARN] (variables) Variable '$Snit_optionInfo' used but never defined in this scope
-third_party/tcllib/modules/snit/pkgIndex.tcl:2: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/snit/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/snit/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/snit/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
@@ -17680,7 +17672,6 @@ third_party/tcllib/modules/des/des.tcl:207: [WARN] (procs) Call to unknown comma
 third_party/tcllib/modules/des/des.tcl:208: [WARN] (procs) Call to unknown command 'Init'
 third_party/tcllib/modules/des/des.tcl:210: [WARN] (procs) Call to unknown command 'Encrypt'
 third_party/tcllib/modules/des/des.tcl:210: [WARN] (procs) Call to unknown command 'Decrypt'
-third_party/tcllib/modules/des/des.tcl:216: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/des/des.tcl:219: [WARN] (procs) Call to unknown command 'Final'
 third_party/tcllib/modules/des/des.tcl:219: [WARN] (procs) Call to unknown command 'tkwait'
 third_party/tcllib/modules/des/des.tcl:226: [WARN] (procs) Call to unknown command 'Final'
@@ -18361,7 +18352,6 @@ third_party/tcllib/modules/blowfish/blowfish.tcl:669: [WARN] (procs) Call to unk
 third_party/tcllib/modules/blowfish/blowfish.tcl:672: [WARN] (procs) Call to unknown command 'Init'
 third_party/tcllib/modules/blowfish/blowfish.tcl:674: [WARN] (procs) Call to unknown command 'Encrypt'
 third_party/tcllib/modules/blowfish/blowfish.tcl:674: [WARN] (procs) Call to unknown command 'Decrypt'
-third_party/tcllib/modules/blowfish/blowfish.tcl:677: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/blowfish/blowfish.tcl:678: [WARN] (procs) Call to unknown command 'Final'
 third_party/tcllib/modules/blowfish/blowfish.tcl:680: [WARN] (procs) Call to unknown command 'tkwait'
 third_party/tcllib/modules/blowfish/blowfish.tcl:685: [WARN] (expressions) Unknown math function 'state()' in expression
@@ -18422,7 +18412,6 @@ third_party/tcllib/modules/ntp/time.tcl:196: [WARN] (procs) Call to unknown comm
 third_party/tcllib/modules/ntp/time.tcl:198: [WARN] (procs) Call to unknown command 'cep'
 third_party/tcllib/modules/ntp/time.tcl:198: [WARN] (procs) Call to unknown command 'udp_open'
 third_party/tcllib/modules/ntp/time.tcl:199: [WARN] (procs) Call to unknown command 'udp_conf'
-third_party/tcllib/modules/ntp/time.tcl:230: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ntp/time.tcl:234: [WARN] (procs) Call to unknown command 'wait'
 third_party/tcllib/modules/ntp/time.tcl:253: [WARN] (variables) Variable '$r' used but never defined in this scope
 third_party/tcllib/modules/ntp/time.tcl:253: [WARN] (variables) Variable '$r' used but never defined in this scope
@@ -29730,7 +29719,6 @@ third_party/tcllib/modules/ripemd/ripemd128.tcl:564: [WARN] (variables) Variable
 third_party/tcllib/modules/ripemd/ripemd128.tcl:576: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:579: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd128.tcl:586: [WARN] (procs) Call to unknown command 'RIPEMD128Init'
-third_party/tcllib/modules/ripemd/ripemd128.tcl:589: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ripemd/ripemd128.tcl:589: [WARN] (procs) Call to unknown command 'RIPEMD128Init'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:590: [WARN] (procs) Call to unknown command 'RIPEMD128Update'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:591: [WARN] (procs) Call to unknown command 'RIPEMD128Final'
@@ -29745,7 +29733,6 @@ third_party/tcllib/modules/ripemd/ripemd128.tcl:632: [WARN] (procs) Call to unkn
 third_party/tcllib/modules/ripemd/ripemd128.tcl:635: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/ripemd/ripemd128.tcl:639: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd128.tcl:646: [WARN] (procs) Call to unknown command 'RIPEHMAC128Init'
-third_party/tcllib/modules/ripemd/ripemd128.tcl:649: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ripemd/ripemd128.tcl:649: [WARN] (procs) Call to unknown command 'RIPEHMAC128Init'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:650: [WARN] (procs) Call to unknown command 'RIPEHMAC128Update'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:651: [WARN] (procs) Call to unknown command 'RIPEHMAC128Final'
@@ -30002,7 +29989,6 @@ third_party/tcllib/modules/ripemd/ripemd160.tcl:644: [WARN] (variables) Variable
 third_party/tcllib/modules/ripemd/ripemd160.tcl:656: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/ripemd/ripemd160.tcl:659: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:666: [WARN] (procs) Call to unknown command 'RIPEMD160Init'
-third_party/tcllib/modules/ripemd/ripemd160.tcl:669: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ripemd/ripemd160.tcl:669: [WARN] (procs) Call to unknown command 'RIPEMD160Init'
 third_party/tcllib/modules/ripemd/ripemd160.tcl:670: [WARN] (procs) Call to unknown command 'RIPEMD160Update'
 third_party/tcllib/modules/ripemd/ripemd160.tcl:671: [WARN] (procs) Call to unknown command 'RIPEMD160Final'
@@ -30017,7 +30003,6 @@ third_party/tcllib/modules/ripemd/ripemd160.tcl:712: [WARN] (procs) Call to unkn
 third_party/tcllib/modules/ripemd/ripemd160.tcl:715: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/ripemd/ripemd160.tcl:719: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:726: [WARN] (procs) Call to unknown command 'RIPEHMAC160Init'
-third_party/tcllib/modules/ripemd/ripemd160.tcl:729: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ripemd/ripemd160.tcl:729: [WARN] (procs) Call to unknown command 'RIPEHMAC160Init'
 third_party/tcllib/modules/ripemd/ripemd160.tcl:730: [WARN] (procs) Call to unknown command 'RIPEHMAC160Update'
 third_party/tcllib/modules/ripemd/ripemd160.tcl:731: [WARN] (procs) Call to unknown command 'RIPEHMAC160Final'
@@ -32925,7 +32910,6 @@ third_party/tcllib/modules/md4/md4.tcl:419: [WARN] (variables) Variable '$err' u
 third_party/tcllib/modules/md4/md4.tcl:431: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/md4/md4.tcl:434: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/md4/md4.tcl:441: [WARN] (procs) Call to unknown command 'MD4Init'
-third_party/tcllib/modules/md4/md4.tcl:444: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/md4/md4.tcl:444: [WARN] (procs) Call to unknown command 'MD4Init'
 third_party/tcllib/modules/md4/md4.tcl:445: [WARN] (procs) Call to unknown command 'MD4Update'
 third_party/tcllib/modules/md4/md4.tcl:446: [WARN] (procs) Call to unknown command 'MD4Final'
@@ -32940,7 +32924,6 @@ third_party/tcllib/modules/md4/md4.tcl:487: [WARN] (procs) Call to unknown comma
 third_party/tcllib/modules/md4/md4.tcl:490: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/md4/md4.tcl:494: [WARN] (variables) Variable '$opts' used but never defined in this scope
 third_party/tcllib/modules/md4/md4.tcl:501: [WARN] (procs) Call to unknown command 'HMACInit'
-third_party/tcllib/modules/md4/md4.tcl:504: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/md4/md4.tcl:504: [WARN] (procs) Call to unknown command 'HMACInit'
 third_party/tcllib/modules/md4/md4.tcl:505: [WARN] (procs) Call to unknown command 'HMACUpdate'
 third_party/tcllib/modules/md4/md4.tcl:506: [WARN] (procs) Call to unknown command 'HMACFinal'
@@ -36933,7 +36916,6 @@ third_party/tcllib/modules/term/imenu.tcl:21: [WARN] (variables) Variable '$at' 
 third_party/tcllib/modules/term/imenu.tcl:21: [WARN] (variables) Variable '$bot' used but never defined in this scope
 third_party/tcllib/modules/term/imenu.tcl:21: [WARN] (variables) Variable '$self' used but never defined in this scope
 third_party/tcllib/modules/term/imenu.tcl:21: [WARN] (variables) Variable '$str' used but never defined in this scope
-third_party/tcllib/modules/term/receive.tcl:21: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/term/ipager.tcl:11: [WARN] (import) package require 'textutil::repeat': not found in provided packages or stdlib
 third_party/tcllib/modules/term/ipager.tcl:12: [WARN] (import) package require 'textutil::tabify': not found in provided packages or stdlib
 third_party/tcllib/modules/term/ipager.tcl:13: [WARN] (import) package require 'term::ansi::send': not found in provided packages or stdlib
@@ -39718,7 +39700,6 @@ third_party/tcllib/modules/amazon-s3/S3.tcl:197: [ERROR] (builtins) 'error' acce
 third_party/tcllib/modules/amazon-s3/S3.tcl:247: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/amazon-s3/S3.tcl:276: [WARN] (procs) Call to unknown command '-a-zA-Z0-9/.,_'
 third_party/tcllib/modules/amazon-s3/S3.tcl:282: [WARN] (variables) Variable '$hex' used but never defined in this scope
-third_party/tcllib/modules/amazon-s3/S3.tcl:303: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:321: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:334: [WARN] (procs) Call to unknown command 'socket'
 third_party/tcllib/modules/amazon-s3/S3.tcl:334: [WARN] (procs) Call to unknown command 'socket'
@@ -40952,15 +40933,12 @@ third_party/tcllib/modules/grammar_aycock/aycock-debug.tcl:157: [WARN] (procs) C
 third_party/tcllib/modules/grammar_aycock/aycock-debug.tcl:182: [WARN] (variables) Variable '$RuleSet' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-debug.tcl:182: [WARN] (variables) Variable '$RuleSet' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-debug.tcl:182: [WARN] (variables) Variable '$RuleSet' used but never defined in this scope
-third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:3: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:5: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:5: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:5: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:5: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [ERROR] (builtins) 'package ifneeded' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [WARN] (variables) Variable '$dir' used but never defined in this scope
@@ -42850,7 +42828,6 @@ third_party/tcllib/modules/sha1/sha1.tcl:636: [WARN] (variables) Variable '$err'
 third_party/tcllib/modules/sha1/sha1.tcl:637: [WARN] (variables) Variable '$err' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha1.tcl:650: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/sha1/sha1.tcl:663: [WARN] (procs) Call to unknown command 'SHA1Init'
-third_party/tcllib/modules/sha1/sha1.tcl:666: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/sha1/sha1.tcl:666: [WARN] (procs) Call to unknown command 'SHA1Init'
 third_party/tcllib/modules/sha1/sha1.tcl:667: [WARN] (procs) Call to unknown command 'SHA1Update'
 third_party/tcllib/modules/sha1/sha1.tcl:668: [WARN] (procs) Call to unknown command 'SHA1Final'
@@ -42865,7 +42842,6 @@ third_party/tcllib/modules/sha1/sha1.tcl:712: [WARN] (procs) Call to unknown com
 third_party/tcllib/modules/sha1/sha1.tcl:717: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/sha1/sha1.tcl:720: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/sha1/sha1.tcl:731: [WARN] (procs) Call to unknown command 'HMACInit'
-third_party/tcllib/modules/sha1/sha1.tcl:734: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/sha1/sha1.tcl:734: [WARN] (procs) Call to unknown command 'HMACInit'
 third_party/tcllib/modules/sha1/sha1.tcl:735: [WARN] (procs) Call to unknown command 'HMACUpdate'
 third_party/tcllib/modules/sha1/sha1.tcl:736: [WARN] (procs) Call to unknown command 'HMACFinal'
@@ -42972,7 +42948,6 @@ third_party/tcllib/modules/sha1/sha256.tcl:616: [WARN] (variables) Variable '$op
 third_party/tcllib/modules/sha1/sha256.tcl:616: [WARN] (variables) Variable '$err' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha256.tcl:617: [WARN] (variables) Variable '$err' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha256.tcl:630: [WARN] (procs) Call to unknown command 'Pop'
-third_party/tcllib/modules/sha1/sha256.tcl:646: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/sha1/sha256.tcl:666: [WARN] (procs) Call to unknown command 'Hex'
 third_party/tcllib/modules/sha1/sha256.tcl:679: [WARN] (variables) Variable '$option' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha256.tcl:679: [WARN] (variables) Variable '$option' used but never defined in this scope
@@ -42983,7 +42958,6 @@ third_party/tcllib/modules/sha1/sha256.tcl:694: [WARN] (procs) Call to unknown c
 third_party/tcllib/modules/sha1/sha256.tcl:699: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/sha1/sha256.tcl:702: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/sha1/sha256.tcl:713: [WARN] (procs) Call to unknown command 'HMACInit'
-third_party/tcllib/modules/sha1/sha256.tcl:716: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/sha1/sha256.tcl:716: [WARN] (procs) Call to unknown command 'HMACInit'
 third_party/tcllib/modules/sha1/sha256.tcl:717: [WARN] (procs) Call to unknown command 'HMACUpdate'
 third_party/tcllib/modules/sha1/sha256.tcl:718: [WARN] (procs) Call to unknown command 'HMACFinal'
@@ -43264,7 +43238,6 @@ third_party/tcllib/modules/sha1/sha1v1.tcl:535: [WARN] (variables) Variable '$er
 third_party/tcllib/modules/sha1/sha1v1.tcl:536: [WARN] (variables) Variable '$err' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha1v1.tcl:549: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/sha1/sha1v1.tcl:562: [WARN] (procs) Call to unknown command 'SHA1Init'
-third_party/tcllib/modules/sha1/sha1v1.tcl:565: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/sha1/sha1v1.tcl:565: [WARN] (procs) Call to unknown command 'SHA1Init'
 third_party/tcllib/modules/sha1/sha1v1.tcl:566: [WARN] (procs) Call to unknown command 'SHA1Update'
 third_party/tcllib/modules/sha1/sha1v1.tcl:567: [WARN] (procs) Call to unknown command 'SHA1Final'
@@ -43279,7 +43252,6 @@ third_party/tcllib/modules/sha1/sha1v1.tcl:611: [WARN] (procs) Call to unknown c
 third_party/tcllib/modules/sha1/sha1v1.tcl:616: [WARN] (procs) Call to unknown command 'Pop'
 third_party/tcllib/modules/sha1/sha1v1.tcl:619: [WARN] (expressions) Unknown math function 'opts()' in expression
 third_party/tcllib/modules/sha1/sha1v1.tcl:630: [WARN] (procs) Call to unknown command 'HMACInit'
-third_party/tcllib/modules/sha1/sha1v1.tcl:633: [ERROR] (builtins) 'fileevent' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/sha1/sha1v1.tcl:633: [WARN] (procs) Call to unknown command 'HMACInit'
 third_party/tcllib/modules/sha1/sha1v1.tcl:634: [WARN] (procs) Call to unknown command 'HMACUpdate'
 third_party/tcllib/modules/sha1/sha1v1.tcl:635: [WARN] (procs) Call to unknown command 'HMACFinal'
