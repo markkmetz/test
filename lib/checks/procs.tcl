@@ -152,6 +152,26 @@ namespace eval ::tclcheck::checks::procs {
         set cmd [lindex $words 0]
         set argc [expr {[llength $words] - 1}]
 
+        # Heuristic: treat multiple adjacent command/quoted/brace pieces
+        # after a `set` target as a single RHS argument. This avoids
+        # false positives where the RHS is constructed from adjoining
+        # bracket/quoted/brace substitutions (e.g. [cmd][cmd2]).
+        if {$cmd eq "set" && $argc > 2} {
+            set allCompound 1
+            for {set k 2} {$k < [llength $words]} {incr k} {
+                set w [lindex $words $k]
+                if { ! ( [::tclcheck::parser::isBracketWord $w] || [string match "\[*" $w] \
+                        || [::tclcheck::parser::isQuotedWord $w] || [string match "\"*" $w] \
+                        || [::tclcheck::parser::isBraceWord $w] || [string match "\{*" $w] ) } {
+                    set allCompound 0
+                    break
+                }
+            }
+            if {$allCompound} {
+                set argc 2
+            }
+        }
+
         # Skip dynamic commands
         if {[::tclcheck::parser::isDynamic $cmd]} { return {} }
         # Skip namespace-qualified unknown cmds — may be from imported packages
