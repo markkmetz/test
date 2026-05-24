@@ -81,8 +81,14 @@ namespace eval ::tclcheck::scope {
     proc defineArgs {argList lineNum} {
         foreach arg $argList {
             # Handle {argname default} pairs
-            if {[llength $arg] >= 1} {
-                define [lindex $arg 0] $lineNum
+            if {[catch {set argLen [llength $arg]}]} {
+                continue
+            }
+            if {$argLen >= 1} {
+                if {[catch {set argName [lindex $arg 0]}]} {
+                    continue
+                }
+                define $argName $lineNum
             }
         }
         # `args` is implicitly defined if present as last arg

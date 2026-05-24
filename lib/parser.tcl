@@ -182,6 +182,7 @@ namespace eval ::tclcheck::parser {
     proc _readQuotedWord {src i len lineNum filename issuesVar} {
         upvar 1 $issuesVar issues
         set startLine $lineNum
+        set bracketDepth 0
         incr i ;# skip opening "
         set word "\""
 
@@ -194,7 +195,19 @@ namespace eval ::tclcheck::parser {
                 incr i 2
                 continue
             }
-            if {$ch eq "\""} {
+            if {$ch eq "\["} {
+                incr bracketDepth
+                append word $ch
+                incr i
+                continue
+            }
+            if {$ch eq "\]" && $bracketDepth > 0} {
+                incr bracketDepth -1
+                append word $ch
+                incr i
+                continue
+            }
+            if {$ch eq "\"" && $bracketDepth == 0} {
                 append word $ch
                 incr i
                 break
@@ -241,11 +254,29 @@ namespace eval ::tclcheck::parser {
     proc _readBareWord {src i len lineNum filename issuesVar} {
         upvar 1 $issuesVar issues
         set start $i
+        set bracketDepth 0
 
         while {$i < $len} {
             set ch [string index $src $i]
+
+            if {$ch eq "\["} {
+                incr bracketDepth
+                incr i
+                continue
+            }
+            if {$ch eq "\]" && $bracketDepth > 0} {
+                incr bracketDepth -1
+                incr i
+                continue
+            }
+
             if {$ch eq " " || $ch eq "\t" || $ch eq "\r" ||
                 $ch eq "\n" || $ch eq ";"} {
+                if {$bracketDepth > 0} {
+                    incr i
+                    if {$ch eq "\n"} { incr lineNum }
+                    continue
+                }
                 break
             }
             if {$ch eq "\\"} {
@@ -254,7 +285,7 @@ namespace eval ::tclcheck::parser {
                     # Line continuation: treat as whitespace
                     incr i 2
                     incr lineNum
-                    break
+                    continue
                 }
                 incr i 2
                 continue

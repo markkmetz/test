@@ -87,8 +87,8 @@ namespace eval ::tclcheck::builtins {
             info         {1 -1}
             trace        {1 -1}
             array        {2 -1}
-            dict         {2 -1}
-            string       {2 -1}
+            dict         {1 -1}
+            string       {1 -1}
             encoding     {1 -1}
             clock        {1 -1}
             binary       {1 -1}
@@ -119,9 +119,9 @@ namespace eval ::tclcheck::builtins {
             first      {2 3}
             last       {2 3}
             match      {2 3}
-            equal      {2 4}
-            compare    {2 4}
-            map        {2 2}
+            equal      {2 5}
+            compare    {2 5}
+            map        {2 3}
             replace    {3 4}
             reverse    {1 1}
             repeat     {2 2}
@@ -150,8 +150,8 @@ namespace eval ::tclcheck::builtins {
             unset      {2 -1}
             remove     {2 -1}
             replace    {1 -1}
-            update     {4 4}
-            with       {2 3}
+            update     {4 -1}
+            with       {2 -1}
             filter     {2 -1}
             map        {2 2}
             for        {3 3}

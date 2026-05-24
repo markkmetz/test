@@ -15,7 +15,7 @@ proc fixedArity {x} { return $x }
 fixedArity 1 2 3                ;##EXPECT: ERROR:procs
 
 # return at global scope
-return                          ;##EXPECT: ERROR:procs
+return                          ;##EXPECT: WARN:procs
 
 # Proc redefinition
 proc dupProc {} { return 1 }

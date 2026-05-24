@@ -36,14 +36,21 @@ namespace eval ::tclcheck::checks::procs {
         if {[::tclcheck::parser::isBraceWord $argList]} {
             set argList [::tclcheck::parser::stripBraces $argList]
         }
-        set args [list {*}$argList]
+        if {[catch {set args [lrange $argList 0 end]}]} {
+            # Fall back to variadic to avoid hard-failing on exotic argument
+            # lists from third-party code; analysis can continue safely.
+            return [list 0 -1 {}]
+        }
         set required 0
         set optional 0
         set hasArgs 0
         set names {}
 
         foreach arg $args {
-            if {[llength $arg] == 1} {
+            if {[catch {set argLen [llength $arg]}]} {
+                return [list 0 -1 {}]
+            }
+            if {$argLen == 1} {
                 if {$arg eq "args"} {
                     set hasArgs 1
                 } else {
@@ -53,7 +60,9 @@ namespace eval ::tclcheck::checks::procs {
             } else {
                 # {name default}
                 incr optional
-                lappend names [lindex $arg 0]
+                if {[catch {lappend names [lindex $arg 0]}]} {
+                    return [list 0 -1 {}]
+                }
             }
         }
 
@@ -78,8 +87,11 @@ namespace eval ::tclcheck::checks::procs {
             }
             return {
                 # return at global scope is an error
-                if {[::tclcheck::scope::currentType] eq "global"} {
-                    lappend issues [list $filename $lineNum ERROR procs \
+                if {[::tclcheck::scope::currentType] eq "global" &&
+                    [file tail $filename] ne "pkgIndex.tcl"} {
+                    # This is often valid in module guard/loader patterns;
+                    # report as WARN to reduce hard false positives.
+                    lappend issues [list $filename $lineNum WARN procs \
                         "'return' used at global scope (outside a proc)"]
                 }
             }
@@ -172,9 +184,27 @@ namespace eval ::tclcheck::checks::procs {
         # Check user-defined procs (try both qualified and unqualified)
         set entry ""
         if {[dict exists $symTable $qualName]} {
-            set entry [dict get $symTable $qualName]
+            set candidate [dict get $symTable $qualName]
+            # For unqualified names, avoid binding to unrelated proc definitions
+            # collected from other standalone files in a directory scan.
+            if {[string first "::" $cmd] < 0} {
+                set candidateFile [lindex $candidate 0]
+                if {$candidateFile eq $filename} {
+                    set entry $candidate
+                }
+            } else {
+                set entry $candidate
+            }
         } elseif {[dict exists $symTable "::$cmd"]} {
-            set entry [dict get $symTable "::$cmd"]
+            set candidate [dict get $symTable "::$cmd"]
+            if {[string first "::" $cmd] < 0} {
+                set candidateFile [lindex $candidate 0]
+                if {$candidateFile eq $filename} {
+                    set entry $candidate
+                }
+            } else {
+                set entry $candidate
+            }
         }
 
         if {$entry ne ""} {
@@ -222,9 +252,25 @@ namespace eval ::tclcheck::checks::procs {
 
             set entry ""
             if {[dict exists $symTable $qualName]} {
-                set entry [dict get $symTable $qualName]
+                set candidate [dict get $symTable $qualName]
+                if {[string first "::" $origCmd] < 0} {
+                    set candidateFile [lindex $candidate 0]
+                    if {$candidateFile eq $filename} {
+                        set entry $candidate
+                    }
+                } else {
+                    set entry $candidate
+                }
             } elseif {[dict exists $symTable "::$origCmd"]} {
-                set entry [dict get $symTable "::$origCmd"]
+                set candidate [dict get $symTable "::$origCmd"]
+                if {[string first "::" $origCmd] < 0} {
+                    set candidateFile [lindex $candidate 0]
+                    if {$candidateFile eq $filename} {
+                        set entry $candidate
+                    }
+                } else {
+                    set entry $candidate
+                }
             }
 
             if {$entry ne ""} {

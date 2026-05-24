@@ -331,6 +331,7 @@ namespace eval ::tclcheck::checks::variables {
             if {$isDyn || $varname eq "DYNAMIC" || $varname eq ""} continue
 
             # Strip array indexing for lookup
+            set baseVar $varname
             regexp {^([^(]+)} $varname baseVar
 
             set state [::tclcheck::scope::lookup $baseVar]

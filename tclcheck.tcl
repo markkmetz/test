@@ -191,6 +191,11 @@ proc collectDefinitions {src filename issuesVar {baseLine 1}} {
                     if {[::tclcheck::parser::isQuotedWord $path]} {
                         set path [::tclcheck::parser::stripQuotes $path]
                     }
+                    if {[::tclcheck::parser::isDynamic $path] ||
+                        [string first "\[" $path] >= 0 ||
+                        [string first "\$" $path] >= 0} {
+                        continue
+                    }
                     set baseDir [file dirname $filename]
                     lassign [::tclcheck::imports::resolveSource \
                         $path $baseDir $filename $lineNum] resolved err
@@ -359,7 +364,13 @@ proc _analyzeProcBody {lineNum words filename issuesVar} {
     # Pre-populate args
     set parsedArgs {}
     if {[::tclcheck::parser::isBraceWord $argList]} {
-        set parsedArgs [list {*}[::tclcheck::parser::stripBraces $argList]]
+        if {![catch {
+            set parsedArgs [lrange [::tclcheck::parser::stripBraces $argList] 0 end]
+        }]} {
+            # Parsed normally.
+        } else {
+            set parsedArgs {}
+        }
     } else {
         set parsedArgs [list $argList]
     }
@@ -397,7 +408,9 @@ proc _analyzeSource {lineNum words filename issuesVar} {
     if {[::tclcheck::parser::isQuotedWord $path]} {
         set path [::tclcheck::parser::stripQuotes $path]
     }
-    if {[::tclcheck::parser::isDynamic $path]} { return }
+    if {[::tclcheck::parser::isDynamic $path] ||
+        [string first "\[" $path] >= 0 ||
+        [string first "\$" $path] >= 0} { return }
 
     set baseDir [file dirname $filename]
     lassign [::tclcheck::imports::resolveSource \
@@ -517,12 +530,26 @@ proc filterIssues {issues opts} {
     set suppressed [dict get $opts suppress]
     set noStyle [dict get $opts noStyle]
 
+    # Suppress cascade diagnostics on lines already known to have syntax errors.
+    set syntaxErrLines {}
+    foreach iss $issues {
+        lassign $iss file line sev checkId msg
+        if {$checkId eq "syntax" && $sev eq "ERROR"} {
+            dict set syntaxErrLines "$file:$line" 1
+        }
+    }
+
     set result {}
     foreach iss $issues {
         lassign $iss file line sev checkId msg
         if {[severityRank $sev] < $minRank} continue
         if {$noStyle && $checkId eq "style"} continue
         if {$checkId in $suppressed} continue
+
+        if {$checkId ne "syntax" && [dict exists $syntaxErrLines "$file:$line"]} {
+            continue
+        }
+
         lappend result $iss
     }
     return $result
