@@ -121,13 +121,26 @@ namespace eval ::tclcheck::parser {
                 break
             }
 
-            # Read next word
+            # Read next word part (may be one or more adjacent parts)
             lassign [_readWord $src $i $len $lineNum $filename issues] \
                 word endIdx newLine
 
-            lappend words $word
+            # Merge adjacent word parts with no separating whitespace
             set i $endIdx
             set lineNum $newLine
+            while {$i < $len} {
+                set ch [string index $src $i]
+                if {$ch eq " " || $ch eq "\t" || $ch eq "\r" || $ch eq "\n" || $ch eq ";"} {
+                    break
+                }
+                # Read the next contiguous piece and append it
+                lassign [_readWord $src $i $len $lineNum $filename issues] nextPart nextIdx nextLine
+                append word $nextPart
+                set i $nextIdx
+                set lineNum $nextLine
+            }
+
+            lappend words $word
         }
         return [list $words $i $lineNum]
     }
