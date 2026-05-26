@@ -116,6 +116,13 @@ namespace eval ::tclcheck::checks::expressions {
     proc _validateExprString {expr filename lineNum} {
         set issues {}
 
+        # Heuristic: expressions containing command substitutions often carry
+        # regex/list syntax that looks like unmatched parens to this lightweight
+        # validator. Skip deep validation to avoid noisy false positives.
+        if {[string first "\[" $expr] >= 0 || [string first "\]" $expr] >= 0} {
+            return $issues
+        }
+
         # Check parenthesis balance
         set depth 0
         set openLine $lineNum

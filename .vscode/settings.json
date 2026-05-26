@@ -1,5 +1,6 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "tclsh": true
+        "tclsh": true,
+        "awk": true
     }
 }

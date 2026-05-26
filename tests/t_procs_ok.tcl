@@ -43,3 +43,24 @@ set len   [string length "world"]
 set lst [list 1 2 3 4]
 set elm [lindex $lst 0]
 set rng [lrange $lst 1 2]
+
+# Line continuation: set RHS split across lines with backslash
+set longval \
+    [expr {1 + 2}]
+
+# Line continuation: for loop with body on next line
+for {set i 0} {$i < 3} {incr i} \
+    {set dummy $i}
+
+# upvar with backslash-escaped global level \#0
+proc useGlobal {name} {
+    set varname ::myns::data_$name
+    upvar \#0 $varname slot
+    set slot 42
+}
+
+# upvar with numeric level
+proc useParent {name} {
+    upvar 1 $name local
+    set local 1
+}

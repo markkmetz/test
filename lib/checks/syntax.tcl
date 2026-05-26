@@ -21,6 +21,7 @@ namespace eval ::tclcheck::checks::syntax {
         set braceOpenLine 0
         set bracketOpenLine 0
         set doubleOpenLine 0
+        set atCmdStart 1
         set lineNum 1
         set len [string length $src]
 
@@ -38,8 +39,30 @@ namespace eval ::tclcheck::checks::syntax {
 
             if {$ch eq "\n"} {
                 incr lineNum
+                set atCmdStart 1
                 continue
             }
+
+            # Skip comments that begin at command start.
+            if {$braceDepth == 0 && !$inDouble && $atCmdStart && $ch eq "#"} {
+                while {$i < $len && [string index $src $i] ne "\n"} {
+                    incr i
+                }
+                if {$i < $len} {
+                    incr lineNum
+                    set atCmdStart 1
+                }
+                continue
+            }
+
+            if {$ch eq " " || $ch eq "\t" || $ch eq "\r"} {
+                continue
+            }
+            if {$ch eq ";"} {
+                set atCmdStart 1
+                continue
+            }
+            set atCmdStart 0
 
             # Inside double-quoted string
             if {$inDouble} {

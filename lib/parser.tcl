@@ -121,6 +121,15 @@ namespace eval ::tclcheck::parser {
                 break
             }
 
+            # Line continuation: backslash before newline is whitespace,
+            # not a word token.  Skip both chars and continue the command.
+            if {$ch eq "\\" && $i+1 < $len &&
+                    [string index $src [expr {$i+1}]] eq "\n"} {
+                incr i 2
+                incr lineNum
+                continue
+            }
+
             # Read next word part (may be one or more adjacent parts)
             lassign [_readWord $src $i $len $lineNum $filename issues] \
                 word endIdx newLine
@@ -131,6 +140,11 @@ namespace eval ::tclcheck::parser {
             while {$i < $len} {
                 set ch [string index $src $i]
                 if {$ch eq " " || $ch eq "\t" || $ch eq "\r" || $ch eq "\n" || $ch eq ";"} {
+                    break
+                }
+                # Backslash-newline inside merge: treat as word boundary
+                if {$ch eq "\\" && $i+1 < $len &&
+                        [string index $src [expr {$i+1}]] eq "\n"} {
                     break
                 }
                 # Read the next contiguous piece and append it
@@ -242,15 +256,56 @@ namespace eval ::tclcheck::parser {
         upvar 1 $issuesVar issues
         set startLine $lineNum
         set depth 1
+        set braceDepth 0
+        set inDouble 0
         incr i ;# skip [
         set start $i
 
         while {$i < $len && $depth > 0} {
             set ch [string index $src $i]
-            if {$ch eq "\\"} { incr i 2; continue }
-            if {$ch eq "\["} { incr depth }
-            if {$ch eq "\]"} { incr depth -1 }
-            if {$ch eq "\n"} { incr lineNum }
+            if {$ch eq "\\"} {
+                if {$i + 1 < $len && [string index $src [expr {$i+1}]] eq "\n"} {
+                    incr lineNum
+                }
+                incr i 2
+                continue
+            }
+
+            if {$ch eq "\n"} {
+                incr lineNum
+                incr i
+                continue
+            }
+
+            if {$inDouble} {
+                if {$ch eq "\""} {
+                    set inDouble 0
+                }
+                incr i
+                continue
+            }
+
+            if {$ch eq "\""} {
+                set inDouble 1
+                incr i
+                continue
+            }
+
+            if {$ch eq "\{"} {
+                incr braceDepth
+                incr i
+                continue
+            }
+            if {$ch eq "\}" && $braceDepth > 0} {
+                incr braceDepth -1
+                incr i
+                continue
+            }
+
+            if {$braceDepth == 0} {
+                if {$ch eq "\["} { incr depth }
+                if {$ch eq "\]"} { incr depth -1 }
+            }
             incr i
         }
 

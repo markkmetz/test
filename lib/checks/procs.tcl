@@ -131,10 +131,13 @@ namespace eval ::tclcheck::checks::procs {
     proc _checkUpvarArgs {lineNum words filename} {
         set issues {}
         # upvar ?level? varName localAlias ...
+        # The level may be a plain integer, #N, or backslash-escaped \#N form.
         set i 1
         if {$i < [llength $words]} {
             set first [lindex $words $i]
-            if {[regexp {^[0-9]+$} $first] || [regexp {^#[0-9]+$} $first]} {
+            if {[regexp {^[0-9]+$} $first] ||
+                [regexp {^#[0-9]+$} $first] ||
+                [regexp {^\\#[0-9]+$} $first]} {
                 incr i
             }
         }

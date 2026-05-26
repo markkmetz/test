@@ -1580,7 +1580,6 @@ third_party/tcllib/modules/calendar/gregorian.tcl:695: [WARN] (procs) Call to un
 third_party/tcllib/modules/calendar/gregorian.tcl:701: [WARN] (procs) Call to unknown command 'EFYWDToJulianDay'
 third_party/tcllib/modules/calendar/gregorian.tcl:720: [WARN] (procs) Call to unknown command ''
 third_party/tcllib/modules/calendar/gregorian.tcl:752: [WARN] (procs) Call to unknown command 'JulianDayToEYMD'
-third_party/tcllib/modules/calendar/gregorian.tcl:760: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/calendar/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/calendar/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/calendar/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
@@ -1854,7 +1853,6 @@ third_party/tcllib/modules/clock/iso8601.tcl:270: [WARN] (procs) Call to unknown
 third_party/tcllib/modules/clock/iso8601.tcl:271: [WARN] (procs) Call to unknown command 'time'
 third_party/tcllib/modules/clock/iso8601.tcl:275: [WARN] (procs) Call to unknown command 'time'
 third_party/tcllib/modules/clock/iso8601.tcl:276: [WARN] (procs) Call to unknown command 'time'
-third_party/tcllib/modules/clock/rfc2822.tcl:139: [WARN] (variables) Variable '$mdgrp' used but never defined in this scope
 third_party/tcllib/modules/clock/rfc2822.tcl:139: [WARN] (procs) Call to unknown command 'AddDatePat'
 third_party/tcllib/modules/clock/rfc2822.tcl:201: [WARN] (procs) 'return' used at global scope (outside a proc)
 third_party/tcllib/modules/clock/rfc2822.tcl:204: [WARN] (variables) Variable '$::argv0' used but never defined in this scope
@@ -2350,7 +2348,6 @@ third_party/tcllib/modules/transfer/copyops.tcl:226: [WARN] (procs) Call to unkn
 third_party/tcllib/modules/transfer/copyops.tcl:233: [WARN] (procs) Call to unknown command 'Run'
 third_party/tcllib/modules/transfer/copyops.tcl:246: [WARN] (procs) Call to unknown command 'CGet'
 third_party/tcllib/modules/transfer/copyops.tcl:247: [WARN] (procs) Call to unknown command 'Configure'
-third_party/tcllib/modules/transfer/copyops.tcl:266: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/transfer/copyops.tcl:269: [WARN] (procs) Call to unknown command 'Configure'
 third_party/tcllib/modules/transfer/copyops.tcl:271: [WARN] (procs) Call to unknown command 'Run'
 third_party/tcllib/modules/transfer/copyops.tcl:276: [WARN] (procs) Call to unknown command 'Run'
@@ -3220,12 +3217,10 @@ third_party/tcllib/modules/websocket/pkgIndex.tcl:2: [WARN] (variables) Variable
 third_party/tcllib/modules/websocket/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/websocket/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:21: [WARN] (import) package require 'logger': not found in provided packages or stdlib
-third_party/tcllib/modules/websocket/websocket.tcl:100: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:102: [WARN] (expressions) Unknown math function 'Connection()' in expression
 third_party/tcllib/modules/websocket/websocket.tcl:103: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:106: [WARN] (procs) Call to unknown command 'Push'
 third_party/tcllib/modules/websocket/websocket.tcl:134: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:136: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:138: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:146: [WARN] (procs) Call to unknown command 'send'
 third_party/tcllib/modules/websocket/websocket.tcl:148: [WARN] (procs) Call to unknown command 'Push'
@@ -3233,16 +3228,13 @@ third_party/tcllib/modules/websocket/websocket.tcl:152: [WARN] (procs) Call to u
 third_party/tcllib/modules/websocket/websocket.tcl:154: [WARN] (procs) Call to unknown command 'Push'
 third_party/tcllib/modules/websocket/websocket.tcl:161: [WARN] (procs) Call to unknown command 'Disconnect'
 third_party/tcllib/modules/websocket/websocket.tcl:211: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:213: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:214: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:218: [WARN] (variables) Variable '$res' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:243: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:245: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:249: [WARN] (procs) Call to unknown command 'Liveness'
 third_party/tcllib/modules/websocket/websocket.tcl:254: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:254: [WARN] (procs) Call to unknown command 'send'
 third_party/tcllib/modules/websocket/websocket.tcl:281: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:283: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:286: [WARN] (expressions) Unknown math function 'Connection()' in expression
 third_party/tcllib/modules/websocket/websocket.tcl:287: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:289: [WARN] (variables) Variable '$Connection' used but never defined in this scope
@@ -3264,13 +3256,10 @@ third_party/tcllib/modules/websocket/websocket.tcl:410: [WARN] (procs) Call to u
 third_party/tcllib/modules/websocket/websocket.tcl:413: [WARN] (procs) Call to unknown command 'ThrowError'
 third_party/tcllib/modules/websocket/websocket.tcl:416: [WARN] (procs) Call to unknown command 'ThrowError'
 third_party/tcllib/modules/websocket/websocket.tcl:460: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:462: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:464: [WARN] (procs) Call to unknown command 'validate'
 third_party/tcllib/modules/websocket/websocket.tcl:472: [WARN] (variables) Variable '$Server' used but never defined in this scope
-third_party/tcllib/modules/websocket/websocket.tcl:491: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:499: [WARN] (procs) Call to unknown command 'sec-websocket-accept'
 third_party/tcllib/modules/websocket/websocket.tcl:535: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:539: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:546: [WARN] (variables) Variable '$Client' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:547: [WARN] (variables) Variable '$Client' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:548: [WARN] (variables) Variable '$Client' used but never defined in this scope
@@ -3281,10 +3270,7 @@ third_party/tcllib/modules/websocket/websocket.tcl:559: [WARN] (variables) Varia
 third_party/tcllib/modules/websocket/websocket.tcl:559: [WARN] (variables) Variable '$Client' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:559: [WARN] (procs) Call to unknown command 'takeover'
 third_party/tcllib/modules/websocket/websocket.tcl:590: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:592: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
-third_party/tcllib/modules/websocket/websocket.tcl:617: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:653: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:655: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:658: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:688: [WARN] (procs) Call to unknown command 'ThrowError'
 third_party/tcllib/modules/websocket/websocket.tcl:692: [WARN] (variables) Variable '$Connection' used but never defined in this scope
@@ -3301,7 +3287,6 @@ third_party/tcllib/modules/websocket/websocket.tcl:802: [WARN] (variables) Varia
 third_party/tcllib/modules/websocket/websocket.tcl:803: [WARN] (variables) Variable '$bytes' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:803: [WARN] (variables) Variable '$bytes' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:836: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:838: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:841: [WARN] (procs) Call to unknown command 'Liveness'
 third_party/tcllib/modules/websocket/websocket.tcl:846: [WARN] (variables) Variable '$dta' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:855: [WARN] (variables) Variable '$header' used but never defined in this scope
@@ -3327,9 +3312,7 @@ third_party/tcllib/modules/websocket/websocket.tcl:941: [WARN] (procs) Call to u
 third_party/tcllib/modules/websocket/websocket.tcl:944: [WARN] (variables) Variable '$header' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:961: [WARN] (variables) Variable '$reason' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:961: [WARN] (variables) Variable '$msg' used but never defined in this scope
-third_party/tcllib/modules/websocket/websocket.tcl:1022: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1081: [WARN] (procs) Call to unknown command 'New'
-third_party/tcllib/modules/websocket/websocket.tcl:1082: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1087: [WARN] (variables) Variable '$sockinfo' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1087: [WARN] (variables) Variable '$sockinfo' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1087: [WARN] (variables) Variable '$sockinfo' used but never defined in this scope
@@ -3342,7 +3325,6 @@ third_party/tcllib/modules/websocket/websocket.tcl:1097: [WARN] (variables) Vari
 third_party/tcllib/modules/websocket/websocket.tcl:1097: [WARN] (variables) Variable '$sockinfo' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1107: [WARN] (procs) Call to unknown command 'Liveness'
 third_party/tcllib/modules/websocket/websocket.tcl:1110: [WARN] (procs) Call to unknown command 'Push'
-third_party/tcllib/modules/websocket/websocket.tcl:1138: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1143: [WARN] (procs) Call to unknown command 'HTTPSocket'
 third_party/tcllib/modules/websocket/websocket.tcl:1152: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1152: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
@@ -3359,19 +3341,15 @@ third_party/tcllib/modules/websocket/websocket.tcl:1182: [WARN] (expressions) Un
 third_party/tcllib/modules/websocket/websocket.tcl:1185: [WARN] (variables) unset '::http::socketmap($k)': variable not defined in current scope
 third_party/tcllib/modules/websocket/websocket.tcl:1199: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1199: [WARN] (procs) Call to unknown command 'takeover'
-third_party/tcllib/modules/websocket/websocket.tcl:1228: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1229: [WARN] (expressions) Unknown math function 'OPEN()' in expression
 third_party/tcllib/modules/websocket/websocket.tcl:1230: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1231: [WARN] (variables) unset 'OPEN(timeout)': variable not defined in current scope
 third_party/tcllib/modules/websocket/websocket.tcl:1235: [WARN] (procs) Call to unknown command 'Connected'
-third_party/tcllib/modules/websocket/websocket.tcl:1260: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1262: [WARN] (procs) Call to unknown command 'HTTPSocket'
 third_party/tcllib/modules/websocket/websocket.tcl:1263: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1263: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1263: [WARN] (procs) Call to unknown command 'Push'
 third_party/tcllib/modules/websocket/websocket.tcl:1271: [WARN] (procs) Call to unknown command 'Disconnect'
-third_party/tcllib/modules/websocket/websocket.tcl:1293: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
-third_party/tcllib/modules/websocket/websocket.tcl:1294: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1295: [WARN] (variables) Variable '$OPEN' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1303: [WARN] (variables) Variable '$htstate' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1303: [WARN] (expressions) Unknown math function 'htstate()' in expression
@@ -3380,7 +3358,6 @@ third_party/tcllib/modules/websocket/websocket.tcl:1306: [WARN] (variables) Vari
 third_party/tcllib/modules/websocket/websocket.tcl:1306: [WARN] (variables) Variable '$htstate' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1308: [WARN] (variables) Variable '$htstate' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1373: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:1408: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1417: [WARN] (procs) Call to unknown command 'AddToken'
 third_party/tcllib/modules/websocket/websocket.tcl:1418: [WARN] (procs) Call to unknown command 'AddToken'
 third_party/tcllib/modules/websocket/websocket.tcl:1445: [WARN] (variables) Variable '$token' used but never defined in this scope
@@ -3391,11 +3368,10 @@ third_party/tcllib/modules/websocket/websocket.tcl:1446: [WARN] (procs) Call to 
 third_party/tcllib/modules/websocket/websocket.tcl:1448: [WARN] (procs) Call to unknown command 'New'
 third_party/tcllib/modules/websocket/websocket.tcl:1449: [WARN] (variables) Variable '$token' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1449: [WARN] (procs) Call to unknown command 'Timeout'
-third_party/tcllib/modules/websocket/websocket.tcl:1450: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/websocket/websocket.tcl:1450: [WARN] (variables) Variable '$token' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1450: [WARN] (variables) Variable '$token' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1450: [WARN] (variables) Variable '$token' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1493: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:1495: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Variable '$Connection' used but never defined in this scope
@@ -3404,11 +3380,9 @@ third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Vari
 third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1497: [WARN] (variables) Variable '$Connection' used but never defined in this scope
-third_party/tcllib/modules/websocket/websocket.tcl:1552: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1553: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1555: [WARN] (variables) Variable '$Connection' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1586: [WARN] (procs) Call to unknown command 'ThrowError'
-third_party/tcllib/modules/websocket/websocket.tcl:1588: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/websocket/websocket.tcl:1598: [WARN] (procs) Call to unknown command 'ThrowError'
 third_party/tcllib/modules/websocket/websocket.tcl:1732: [WARN] (variables) Variable '$infoscript' used but never defined in this scope
 third_party/tcllib/modules/websocket/websocket.tcl:1732: [WARN] (variables) Variable '$i' used but never defined in this scope
@@ -3495,7 +3469,6 @@ third_party/tcllib/modules/sasl/sasl.tcl:262: [WARN] (variables) Variable '$pass
 third_party/tcllib/modules/sasl/sasl.tcl:262: [WARN] (variables) Variable '$check' used but never defined in this scope
 third_party/tcllib/modules/sasl/sasl.tcl:262: [WARN] (variables) Variable '$cx' used but never defined in this scope
 third_party/tcllib/modules/sasl/sasl.tcl:262: [WARN] (variables) Variable '$hash' used but never defined in this scope
-third_party/tcllib/modules/sasl/sasl.tcl:310: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/sasl/sasl.tcl:360: [WARN] (variables) Variable '$r' used but never defined in this scope
 third_party/tcllib/modules/sasl/sasl.tcl:366: [WARN] (variables) Variable '$user' used but never defined in this scope
 third_party/tcllib/modules/sasl/sasl.tcl:366: [WARN] (variables) Variable '$realm' used but never defined in this scope
@@ -5555,7 +5528,7 @@ third_party/tcllib/modules/jpeg/jpeg.tcl:287: [WARN] (variables) Variable '$exif
 third_party/tcllib/modules/jpeg/jpeg.tcl:287: [WARN] (expressions) Unknown math function 'exif()' in expression
 third_party/tcllib/modules/jpeg/jpeg.tcl:287: [WARN] (expressions) Unknown math function 'exif()' in expression
 third_party/tcllib/modules/jpeg/jpeg.tcl:287: [WARN] (expressions) Unknown math function 'exif()' in expression
-third_party/tcllib/modules/jpeg/jpeg.tcl:287: [ERROR] (builtins) 'info exists' accepts at most 1 argument(s), got 12
+third_party/tcllib/modules/jpeg/jpeg.tcl:287: [ERROR] (builtins) 'info exists' accepts at most 1 argument(s), got 9
 third_party/tcllib/modules/jpeg/jpeg.tcl:287: [WARN] (variables) Variable '$exif' used but never defined in this scope
 third_party/tcllib/modules/jpeg/jpeg.tcl:288: [WARN] (procs) Call to unknown command 'openJFIF'
 third_party/tcllib/modules/jpeg/jpeg.tcl:289: [WARN] (variables) Variable '$exif' used but never defined in this scope
@@ -5995,11 +5968,8 @@ third_party/tcllib/modules/fileutil/fileutil.tcl:276: [WARN] (procs) Call to unk
 third_party/tcllib/modules/fileutil/fileutil.tcl:387: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/fileutil/fileutil.tcl:387: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/fileutil/fileutil.tcl:451: [WARN] (procs) Call to unknown command 'lexnormalize'
-third_party/tcllib/modules/fileutil/fileutil.tcl:461: [ERROR] (builtins) 'file split' accepts at most 1 argument(s), got 2
 third_party/tcllib/modules/fileutil/fileutil.tcl:461: [WARN] (procs) Call to unknown command 'Normalize'
-third_party/tcllib/modules/fileutil/fileutil.tcl:466: [ERROR] (builtins) 'file split' accepts at most 1 argument(s), got 2
 third_party/tcllib/modules/fileutil/fileutil.tcl:466: [WARN] (procs) Call to unknown command 'Normalize'
-third_party/tcllib/modules/fileutil/fileutil.tcl:477: [ERROR] (builtins) 'file split' accepts at most 1 argument(s), got 2
 third_party/tcllib/modules/fileutil/fileutil.tcl:477: [WARN] (procs) Call to unknown command 'lexnormalize'
 third_party/tcllib/modules/fileutil/fileutil.tcl:614: [WARN] (procs) Call to unknown command 'SetOptions'
 third_party/tcllib/modules/fileutil/fileutil.tcl:616: [WARN] (procs) Call to unknown command 'SetOptions'
@@ -6180,7 +6150,6 @@ third_party/tcllib/modules/fileutil/fileutil.tcl:1697: [WARN] (expressions) Unkn
 third_party/tcllib/modules/fileutil/fileutil.tcl:1722: [WARN] (procs) Call to unknown command 'Normalize'
 third_party/tcllib/modules/fileutil/fileutil.tcl:1722: [WARN] (procs) Call to unknown command 'TempFile'
 third_party/tcllib/modules/fileutil/fileutil.tcl:1726: [WARN] (procs) Call to unknown command 'tempdir'
-third_party/tcllib/modules/fileutil/fileutil.tcl:1739: [ERROR] (builtins) 'string index' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/fileutil/fileutil.tcl:1795: [WARN] (variables) Variable '$params' used but never defined in this scope
 third_party/tcllib/modules/fileutil/fileutil.tcl:1798: [WARN] (variables) Variable '$params' used but never defined in this scope
 third_party/tcllib/modules/fileutil/fileutil.tcl:1824: [WARN] (variables) Variable '$ele' used but never defined in this scope
@@ -6645,7 +6614,7 @@ third_party/tcllib/modules/http/autoproxy.tcl:195: [WARN] (procs) Call to unknow
 third_party/tcllib/modules/http/autoproxy.tcl:200: [WARN] (variables) Variable '$proxy' used but never defined in this scope
 third_party/tcllib/modules/http/autoproxy.tcl:200: [WARN] (expressions) Unknown math function 'env()' in expression
 third_party/tcllib/modules/http/autoproxy.tcl:200: [WARN] (expressions) Unknown math function 'env()' in expression
-third_party/tcllib/modules/http/autoproxy.tcl:200: [ERROR] (builtins) 'string length' accepts at most 1 argument(s), got 9
+third_party/tcllib/modules/http/autoproxy.tcl:200: [ERROR] (builtins) 'string length' accepts at most 1 argument(s), got 7
 third_party/tcllib/modules/http/autoproxy.tcl:200: [WARN] (variables) Variable '$proxy' used but never defined in this scope
 third_party/tcllib/modules/http/autoproxy.tcl:202: [ERROR] (syntax) Unclosed bracket '[' starting at line 202
 third_party/tcllib/modules/http/autoproxy.tcl:202: [ERROR] (syntax) Unclosed bracket '[' starting at line 202
@@ -7018,7 +6987,6 @@ third_party/tcllib/modules/struct/tree_tcl.tcl:1052: [WARN] (variables) Variable
 third_party/tcllib/modules/struct/tree_tcl.tcl:1059: [WARN] (variables) Variable '$rootname' used but never defined in this scope
 third_party/tcllib/modules/struct/tree_tcl.tcl:1070: [WARN] (variables) Variable '$rootname' used but never defined in this scope
 third_party/tcllib/modules/struct/tree_tcl.tcl:1083: [WARN] (procs) Call to unknown command 'ldelete'
-third_party/tcllib/modules/struct/tree_tcl.tcl:1090: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/struct/tree_tcl.tcl:1110: [WARN] (variables) Variable '$rootname' used but never defined in this scope
 third_party/tcllib/modules/struct/tree_tcl.tcl:1198: [WARN] (variables) Variable '$rootname' used but never defined in this scope
 third_party/tcllib/modules/struct/tree_tcl.tcl:1229: [WARN] (variables) Variable '$rootname' used but never defined in this scope
@@ -7352,7 +7320,6 @@ third_party/tcllib/modules/struct/tree1.tcl:366: [WARN] (expressions) Unknown ma
 third_party/tcllib/modules/struct/tree1.tcl:395: [WARN] (expressions) Unknown math function 'attribute()' in expression
 third_party/tcllib/modules/struct/tree1.tcl:427: [WARN] (expressions) Unknown math function 'attribute()' in expression
 third_party/tcllib/modules/struct/tree1.tcl:486: [WARN] (procs) Call to unknown command 'GenerateUniqueNodeName'
-third_party/tcllib/modules/struct/tree1.tcl:637: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/struct/tree1.tcl:762: [WARN] (procs) Call to unknown command 'Serialize'
 third_party/tcllib/modules/struct/tree1.tcl:763: [WARN] (variables) Variable '$tree' used but never defined in this scope
 third_party/tcllib/modules/struct/tree1.tcl:763: [WARN] (variables) Variable '$tree' used but never defined in this scope
@@ -7706,7 +7673,6 @@ third_party/tcllib/modules/struct/matrix.tcl:2605: [WARN] (variables) Variable '
 third_party/tcllib/modules/struct/matrix.tcl:2605: [WARN] (variables) Variable '$A' used but never defined in this scope
 third_party/tcllib/modules/struct/matrix.tcl:2605: [WARN] (variables) Variable '$A' used but never defined in this scope
 third_party/tcllib/modules/struct/matrix.tcl:2618: [WARN] (procs) Call to unknown command 'SortMaxHeapify'
-third_party/tcllib/modules/struct/matrix.tcl:2637: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/struct/matrix.tcl:2702: [WARN] (variables) Variable '$rows' used but never defined in this scope
 third_party/tcllib/modules/struct/matrix.tcl:2702: [WARN] (variables) Variable '$rows' used but never defined in this scope
 third_party/tcllib/modules/struct/matrix.tcl:2704: [WARN] (variables) Variable '$columns' used but never defined in this scope
@@ -8033,7 +7999,6 @@ third_party/tcllib/modules/struct/graph_tcl.tcl:2976: [WARN] (procs) Call to unk
 third_party/tcllib/modules/struct/graph_tcl.tcl:2982: [WARN] (procs) Call to unknown command '__node_exists'
 third_party/tcllib/modules/struct/graph_tcl.tcl:3085: [WARN] (variables) unset 'nx': variable not defined in current scope
 third_party/tcllib/modules/struct/graph_tcl.tcl:3088: [WARN] (procs) Call to unknown command 'CheckMissingNode'
-third_party/tcllib/modules/struct/graph_tcl.tcl:3099: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/struct/graph_tcl.tcl:3129: [WARN] (expressions) Unknown math function 'inArcs()' in expression
 third_party/tcllib/modules/struct/graph_tcl.tcl:3153: [WARN] (expressions) Unknown math function 'arcNodes()' in expression
 third_party/tcllib/modules/struct/graph_tcl.tcl:3207: [WARN] (procs) Call to unknown command 'K'
@@ -8148,8 +8113,6 @@ third_party/tcllib/modules/struct/graphops.tcl:477: [WARN] (variables) Variable 
 third_party/tcllib/modules/struct/graphops.tcl:477: [WARN] (procs) Call to unknown command 'findHamiltonCycle'
 third_party/tcllib/modules/struct/graphops.tcl:508: [ERROR] (syntax) Unclosed bracket '[' starting at line 508
 third_party/tcllib/modules/struct/graphops.tcl:508: [ERROR] (syntax) Unclosed bracket '[' starting at line 508
-third_party/tcllib/modules/struct/graphops.tcl:517: [WARN] (variables) Variable '$u' used but never defined in this scope
-third_party/tcllib/modules/struct/graphops.tcl:517: [WARN] (variables) Variable '$u' used but never defined in this scope
 third_party/tcllib/modules/struct/graphops.tcl:553: [WARN] (procs) Call to unknown command 'VerifyWeightsAreOk'
 third_party/tcllib/modules/struct/graphops.tcl:555: [WARN] (procs) Call to unknown command 'createCompleteGraph'
 third_party/tcllib/modules/struct/graphops.tcl:558: [WARN] (procs) Call to unknown command 'prim'
@@ -9515,7 +9478,6 @@ third_party/tcllib/modules/md5/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir
 third_party/tcllib/modules/md5/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/md5/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/md5/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/md5/md5x.tcl:47: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/md5/md5x.tcl:51: [WARN] (variables) Variable '$::tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/md5/md5x.tcl:80: [WARN] (expressions) Unknown math function 'state()' in expression
 third_party/tcllib/modules/md5/md5x.tcl:81: [WARN] (procs) Call to unknown command 'md5c'
@@ -10103,7 +10065,6 @@ third_party/tcllib/modules/exif/exif.tcl:199: [WARN] (procs) Call to unknown com
 third_party/tcllib/modules/exif/exif.tcl:202: [WARN] (variables) Variable '$thumb_result' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:202: [WARN] (variables) Variable '$thumb_result' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:202: [WARN] (variables) Variable '$thumb_result' used but never defined in this scope
-third_party/tcllib/modules/exif/exif.tcl:202: [ERROR] (builtins) 'string range' accepts at most 3 argument(s), got 5
 third_party/tcllib/modules/exif/exif.tcl:202: [WARN] (variables) Variable '$thumb_result' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:202: [WARN] (variables) Variable '$thumb_result' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:202: [WARN] (variables) Variable '$thumb_result' used but never defined in this scope
@@ -10145,7 +10106,7 @@ third_party/tcllib/modules/exif/exif.tcl:434: [WARN] (variables) Variable '$fiel
 third_party/tcllib/modules/exif/exif.tcl:436: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:436: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:436: [WARN] (variables) Variable '$field' used but never defined in this scope
-third_party/tcllib/modules/exif/exif.tcl:437: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/exif/exif.tcl:437: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:437: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:439: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:442: [WARN] (variables) Variable '$field' used but never defined in this scope
@@ -10184,17 +10145,19 @@ third_party/tcllib/modules/exif/exif.tcl:521: [WARN] (variables) Variable '$fiel
 third_party/tcllib/modules/exif/exif.tcl:521: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:552: [ERROR] (syntax) Unclosed bracket '[' starting at line 552
 third_party/tcllib/modules/exif/exif.tcl:552: [ERROR] (syntax) Unclosed bracket '[' starting at line 552
-third_party/tcllib/modules/exif/exif.tcl:553: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/exif/exif.tcl:553: [WARN] (variables) Variable '$field' used but never defined in this scope
+third_party/tcllib/modules/exif/exif.tcl:553: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:555: [ERROR] (syntax) Unclosed bracket '[' starting at line 555
 third_party/tcllib/modules/exif/exif.tcl:555: [ERROR] (syntax) Unclosed bracket '[' starting at line 555
-third_party/tcllib/modules/exif/exif.tcl:556: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/exif/exif.tcl:556: [WARN] (variables) Variable '$field' used but never defined in this scope
+third_party/tcllib/modules/exif/exif.tcl:556: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:559: [WARN] (expressions) Unknown math function 'field()' in expression
 third_party/tcllib/modules/exif/exif.tcl:560: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:563: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:566: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:569: [WARN] (variables) Variable '$field' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:573: [WARN] (expressions) Unknown math function 'field()' in expression
-third_party/tcllib/modules/exif/exif.tcl:573: [ERROR] (builtins) 'info exists' accepts at most 1 argument(s), got 4
+third_party/tcllib/modules/exif/exif.tcl:573: [ERROR] (builtins) 'info exists' accepts at most 1 argument(s), got 3
 third_party/tcllib/modules/exif/exif.tcl:573: [WARN] (variables) Variable '$cameraMode' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:573: [WARN] (variables) Variable '$cameraMode' used but never defined in this scope
 third_party/tcllib/modules/exif/exif.tcl:574: [ERROR] (syntax) Unclosed bracket '[' starting at line 574
@@ -11543,8 +11506,6 @@ third_party/tcllib/modules/page/parse_pegser.tcl:38: [WARN] (expressions) Unknow
 third_party/tcllib/modules/page/parse_pegser.tcl:71: [WARN] (procs) Call to unknown command 'treeOf'
 third_party/tcllib/modules/page/gen_peg_cpkg.tcl:9: [WARN] (import) package require 'page::util::peg': not found in provided packages or stdlib
 third_party/tcllib/modules/page/gen_peg_cpkg.tcl:14: [WARN] (import) namespace import '::page::util::peg::*': no procs found in namespace '::page::util::peg'
-third_party/tcllib/modules/page/gen_peg_cpkg.tcl:63: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/page/gen_peg_cpkg.tcl:82: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/page/analysis_peg_emodes.tcl:35: [WARN] (import) package require 'page::plugin': not found in provided packages or stdlib
 third_party/tcllib/modules/page/analysis_peg_emodes.tcl:36: [WARN] (import) package require 'page::util::flow': not found in provided packages or stdlib
 third_party/tcllib/modules/page/analysis_peg_emodes.tcl:37: [WARN] (import) package require 'page::util::peg': not found in provided packages or stdlib
@@ -14726,7 +14687,6 @@ third_party/tcllib/modules/page/gen_peg_me.tcl:153: [WARN] (procs) Call to unkno
 third_party/tcllib/modules/page/gen_peg_me.tcl:155: [WARN] (procs) Call to unknown command 'page_info'
 third_party/tcllib/modules/page/gen_peg_me.tcl:159: [WARN] (procs) Call to unknown command 'page_error'
 third_party/tcllib/modules/page/gen_peg_me.tcl:178: [WARN] (procs) Call to unknown command 'Pfx'
-third_party/tcllib/modules/page/gen_peg_me.tcl:194: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/page/gen_peg_me.tcl:218: [WARN] (procs) Call to unknown command 'Cat'
 third_party/tcllib/modules/page/gen_peg_me.tcl:223: [WARN] (procs) Call to unknown command 'Pfx'
 third_party/tcllib/modules/page/gen_peg_me.tcl:228: [WARN] (variables) Variable '$ok' used but never defined in this scope
@@ -15696,11 +15656,9 @@ third_party/tcllib/modules/snit/main2.tcl:1663: [WARN] (procs) Call to unknown c
 third_party/tcllib/modules/snit/main2.tcl:1692: [WARN] (procs) Call to unknown command 'Comp.CheckMethodName'
 third_party/tcllib/modules/snit/main2.tcl:1696: [WARN] (procs) Call to unknown command 'CheckArgs'
 third_party/tcllib/modules/snit/main2.tcl:1722: [WARN] (procs) Call to unknown command 'Comp.Init'
-third_party/tcllib/modules/snit/main2.tcl:1815: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/snit/main2.tcl:1820: [WARN] (procs) Call to unknown command 'RT.MakeInstanceCommand'
 third_party/tcllib/modules/snit/main2.tcl:1825: [WARN] (variables) Variable '$Snit_optionInfo' used but never defined in this scope
 third_party/tcllib/modules/snit/main2.tcl:1835: [WARN] (procs) Call to unknown command 'RT.ConstructInstance'
-third_party/tcllib/modules/snit/main2.tcl:1870: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/snit/main2.tcl:1877: [WARN] (variables) Variable '$Snit_optionInfo' used but never defined in this scope
 third_party/tcllib/modules/snit/main2.tcl:1888: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
 third_party/tcllib/modules/snit/main2.tcl:1890: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
@@ -16034,11 +15992,9 @@ third_party/tcllib/modules/snit/main1.tcl:1854: [WARN] (procs) Call to unknown c
 third_party/tcllib/modules/snit/main1.tcl:1858: [WARN] (procs) Call to unknown command 'CheckArgs'
 third_party/tcllib/modules/snit/main1.tcl:1884: [WARN] (procs) Call to unknown command 'Comp.Init'
 third_party/tcllib/modules/snit/main1.tcl:1926: [WARN] (procs) Call to unknown command 'Contains'
-third_party/tcllib/modules/snit/main1.tcl:2000: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/snit/main1.tcl:2005: [WARN] (procs) Call to unknown command 'RT.MakeInstanceCommand'
 third_party/tcllib/modules/snit/main1.tcl:2009: [WARN] (variables) Variable '$Snit_optionInfo' used but never defined in this scope
 third_party/tcllib/modules/snit/main1.tcl:2019: [WARN] (procs) Call to unknown command 'RT.ConstructInstance'
-third_party/tcllib/modules/snit/main1.tcl:2053: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/snit/main1.tcl:2059: [WARN] (variables) Variable '$Snit_optionInfo' used but never defined in this scope
 third_party/tcllib/modules/snit/main1.tcl:2070: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
 third_party/tcllib/modules/snit/main1.tcl:2072: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
@@ -16057,8 +16013,6 @@ third_party/tcllib/modules/snit/main1.tcl:2155: [WARN] (variables) Variable '$Sn
 third_party/tcllib/modules/snit/main1.tcl:2162: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
 third_party/tcllib/modules/snit/main1.tcl:2163: [WARN] (variables) Variable '$::snit::nominalInstanceProc' is global but 'global ::snit::nominalInstanceProc' not declared in this proc
 third_party/tcllib/modules/snit/main1.tcl:2163: [WARN] (variables) Variable '$::snit::simpleInstanceProc' is global but 'global ::snit::simpleInstanceProc' not declared in this proc
-third_party/tcllib/modules/snit/main1.tcl:2168: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/snit/main1.tcl:2168: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/snit/main1.tcl:2199: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
 third_party/tcllib/modules/snit/main1.tcl:2202: [WARN] (variables) Variable '$Snit_info' used but never defined in this scope
 third_party/tcllib/modules/snit/main1.tcl:2203: [WARN] (procs) Call to unknown command 'destroy'
@@ -17561,13 +17515,10 @@ third_party/tcllib/modules/imap4/imap4.tcl:718: [WARN] (variables) Variable '$st
 third_party/tcllib/modules/imap4/imap4.tcl:718: [WARN] (variables) Variable '$end' used but never defined in this scope
 third_party/tcllib/modules/imap4/imap4.tcl:733: [WARN] (variables) Variable '$start' used but never defined in this scope
 third_party/tcllib/modules/imap4/imap4.tcl:733: [WARN] (variables) Variable '$end' used but never defined in this scope
-third_party/tcllib/modules/imap4/imap4.tcl:776: [ERROR] (builtins) 'string range' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/imap4/imap4.tcl:782: [WARN] (expressions) Unknown math function 'msginfo()' in expression
 third_party/tcllib/modules/imap4/imap4.tcl:783: [WARN] (variables) Variable '$use_defval' used but never defined in this scope
 third_party/tcllib/modules/imap4/imap4.tcl:784: [WARN] (variables) Variable '$defval' used but never defined in this scope
-third_party/tcllib/modules/imap4/imap4.tcl:811: [ERROR] (builtins) 'string range' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/imap4/imap4.tcl:818: [WARN] (expressions) Unknown math function 'mboxinfo()' in expression
-third_party/tcllib/modules/imap4/imap4.tcl:843: [ERROR] (builtins) 'string range' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/imap4/imap4.tcl:850: [WARN] (expressions) Unknown math function 'folderinfo()' in expression
 third_party/tcllib/modules/imap4/imap4.tcl:1030: [WARN] (procs) Call to unknown command 'lset'
 third_party/tcllib/modules/imap4/imap4.tcl:1039: [WARN] (procs) Call to unknown command 'lset'
@@ -17809,9 +17760,7 @@ third_party/tcllib/modules/des/tcldesjr.tcl:349: [WARN] (variables) Variable '$l
 third_party/tcllib/modules/des/tcldesjr.tcl:349: [WARN] (variables) Variable '$looping' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:350: [WARN] (variables) Variable '$looping' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:350: [WARN] (variables) Variable '$looping' used but never defined in this scope
-third_party/tcllib/modules/des/tcldesjr.tcl:356: [ERROR] (builtins) 'for' accepts at most 4 argument(s), got 5
 third_party/tcllib/modules/des/tcldesjr.tcl:356: [WARN] (variables) Variable '$looping' used but never defined in this scope
-third_party/tcllib/modules/des/tcldesjr.tcl:356: [WARN] (expressions) 'for' cond argument should be braced: use {cond}
 third_party/tcllib/modules/des/tcldesjr.tcl:571: [WARN] (variables) Variable '$leftTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:572: [WARN] (variables) Variable '$rightTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:577: [WARN] (variables) Variable '$temp' used but never defined in this scope
@@ -17912,8 +17861,6 @@ third_party/tcllib/modules/des/tcldesjr.tcl:577: [WARN] (variables) Variable '$m
 third_party/tcllib/modules/des/tcldesjr.tcl:577: [WARN] (variables) Variable '$mixDataRight' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:577: [WARN] (variables) Variable '$msgDataLeft' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:577: [WARN] (variables) Variable '$msgDataRight' used but never defined in this scope
-third_party/tcllib/modules/des/tcldesjr.tcl:614: [ERROR] (builtins) 'for' accepts at most 4 argument(s), got 5
-third_party/tcllib/modules/des/tcldesjr.tcl:614: [WARN] (expressions) 'for' cond argument should be braced: use {cond}
 third_party/tcllib/modules/des/tcldesjr.tcl:675: [WARN] (variables) Variable '$leftTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:676: [WARN] (variables) Variable '$rightTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:690: [WARN] (variables) Variable '$leftTemp' used but never defined in this scope
@@ -17922,8 +17869,6 @@ third_party/tcllib/modules/des/tcldesjr.tcl:699: [WARN] (variables) Variable '$m
 third_party/tcllib/modules/des/tcldesjr.tcl:699: [WARN] (variables) Variable '$msgOut' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:710: [WARN] (variables) Variable '$msgOut' used but never defined in this scope
 third_party/tcllib/modules/des/tcldesjr.tcl:710: [WARN] (variables) Variable '$msgOut' used but never defined in this scope
-third_party/tcllib/modules/des/tcldesjr.tcl:722: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
-third_party/tcllib/modules/des/tcldesjr.tcl:722: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/des/tcldesjr.tcl:946: [WARN] (expressions) Unbraced 'expr': combine into a single braced argument {expr {$right ...}}
 third_party/tcllib/modules/des/tcldesjr.tcl:981: [ERROR] (syntax) Unclosed bracket '[' starting at line 981
 third_party/tcllib/modules/des/tcldesjr.tcl:981: [ERROR] (syntax) Unbalanced brace: missing closing '}'
@@ -18077,9 +18022,7 @@ third_party/tcllib/modules/des/tcldes.tcl:362: [WARN] (variables) Variable '$loo
 third_party/tcllib/modules/des/tcldes.tcl:362: [WARN] (variables) Variable '$looping' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:363: [WARN] (variables) Variable '$looping' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:363: [WARN] (variables) Variable '$looping' used but never defined in this scope
-third_party/tcllib/modules/des/tcldes.tcl:369: [ERROR] (builtins) 'for' accepts at most 4 argument(s), got 5
 third_party/tcllib/modules/des/tcldes.tcl:369: [WARN] (variables) Variable '$looping' used but never defined in this scope
-third_party/tcllib/modules/des/tcldes.tcl:369: [WARN] (expressions) 'for' cond argument should be braced: use {cond}
 third_party/tcllib/modules/des/tcldes.tcl:591: [WARN] (variables) Variable '$leftTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:592: [WARN] (variables) Variable '$rightTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:597: [WARN] (variables) Variable '$temp' used but never defined in this scope
@@ -18184,8 +18127,6 @@ third_party/tcllib/modules/des/tcldes.tcl:597: [WARN] (variables) Variable '$mix
 third_party/tcllib/modules/des/tcldes.tcl:597: [WARN] (variables) Variable '$mixDataRight' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:597: [WARN] (variables) Variable '$msgDataLeft' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:597: [WARN] (variables) Variable '$msgDataRight' used but never defined in this scope
-third_party/tcllib/modules/des/tcldes.tcl:635: [ERROR] (builtins) 'for' accepts at most 4 argument(s), got 5
-third_party/tcllib/modules/des/tcldes.tcl:635: [WARN] (expressions) 'for' cond argument should be braced: use {cond}
 third_party/tcllib/modules/des/tcldes.tcl:697: [WARN] (variables) Variable '$leftTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:698: [WARN] (variables) Variable '$rightTemp' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:712: [WARN] (variables) Variable '$leftTemp' used but never defined in this scope
@@ -18194,8 +18135,6 @@ third_party/tcllib/modules/des/tcldes.tcl:721: [WARN] (variables) Variable '$msg
 third_party/tcllib/modules/des/tcldes.tcl:721: [WARN] (variables) Variable '$msgOut' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:732: [WARN] (variables) Variable '$msgOut' used but never defined in this scope
 third_party/tcllib/modules/des/tcldes.tcl:732: [WARN] (variables) Variable '$msgOut' used but never defined in this scope
-third_party/tcllib/modules/des/tcldes.tcl:744: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
-third_party/tcllib/modules/des/tcldes.tcl:744: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/des/tcldes.tcl:1012: [ERROR] (syntax) Unclosed bracket '[' starting at line 1012
 third_party/tcllib/modules/des/tcldes.tcl:1012: [ERROR] (syntax) Unbalanced brace: missing closing '}'
 third_party/tcllib/modules/des/tcldes.tcl:1013: [ERROR] (syntax) Unclosed bracket '[' starting at line 1013
@@ -18275,10 +18214,8 @@ third_party/tcllib/modules/mapproj/mapproj.tcl:569: [WARN] (variables) Variable 
 third_party/tcllib/modules/mapproj/mapproj.tcl:569: [WARN] (variables) Variable '$costheta' used but never defined in this scope
 third_party/tcllib/modules/mapproj/mapproj.tcl:569: [WARN] (variables) Variable '$costheta' used but never defined in this scope
 third_party/tcllib/modules/mapproj/mapproj.tcl:569: [WARN] (variables) Variable '$costheta' used but never defined in this scope
-third_party/tcllib/modules/mapproj/mapproj.tcl:572: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/mapproj/mapproj.tcl:643: [WARN] (variables) Variable '$sintheta' used but never defined in this scope
 third_party/tcllib/modules/mapproj/mapproj.tcl:643: [WARN] (variables) Variable '$costheta' used but never defined in this scope
-third_party/tcllib/modules/mapproj/mapproj.tcl:646: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/mapproj/mapproj.tcl:747: [WARN] (variables) Variable '$m' used but never defined in this scope
 third_party/tcllib/modules/mapproj/mapproj.tcl:747: [WARN] (variables) Variable '$m' used but never defined in this scope
 third_party/tcllib/modules/mapproj/mapproj.tcl:747: [WARN] (variables) Variable '$m' used but never defined in this scope
@@ -18640,7 +18577,6 @@ third_party/tcllib/modules/comm/comm.tcl:1689: [WARN] (variables) Variable '$sel
 third_party/tcllib/modules/comm/comm.tcl:1762: [WARN] (expressions) Unknown math function 'comm()' in expression
 third_party/tcllib/modules/comm/comm.tcl:1763: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/comm/comm.tcl:1763: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
-third_party/tcllib/modules/comm/comm.tcl:1765: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/profiler/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/profiler/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/profiler/pkgIndex.tcl:2: [WARN] (variables) Variable '$dir' used but never defined in this scope
@@ -18652,13 +18588,11 @@ third_party/tcllib/modules/profiler/profiler.tcl:244: [WARN] (expressions) Unkno
 third_party/tcllib/modules/profiler/profiler.tcl:247: [WARN] (expressions) Unknown math function 'descendants()' in expression
 third_party/tcllib/modules/profiler/profiler.tcl:251: [WARN] (variables) Variable '$args' used but never defined in this scope
 third_party/tcllib/modules/profiler/profiler.tcl:251: [WARN] (variables) Variable '$args' used but never defined in this scope
-third_party/tcllib/modules/profiler/profiler.tcl:349: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/profiler/profiler.tcl:399: [WARN] (procs) Call to unknown command 'printname'
 third_party/tcllib/modules/profiler/profiler.tcl:419: [WARN] (procs) Call to unknown command 'sortFunctions'
 third_party/tcllib/modules/profiler/profiler.tcl:421: [WARN] (procs) Call to unknown command 'printname'
 third_party/tcllib/modules/profiler/profiler.tcl:423: [WARN] (variables) Variable '$result' used but never defined in this scope
 third_party/tcllib/modules/profiler/profiler.tcl:449: [WARN] (variables) unset 'thisCallers': variable not defined in current scope
-third_party/tcllib/modules/profiler/profiler.tcl:462: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/profiler/profiler.tcl:485: [WARN] (variables) Variable '$fxn' used but never defined in this scope
 third_party/tcllib/modules/profiler/profiler.tcl:485: [WARN] (variables) Variable '$fxn' used but never defined in this scope
 third_party/tcllib/modules/profiler/profiler.tcl:485: [WARN] (variables) Variable '$fxn' used but never defined in this scope
@@ -19153,12 +19087,10 @@ third_party/tcllib/modules/math/pdf_stat.tcl:583: [WARN] (variables) Variable '$
 third_party/tcllib/modules/math/pdf_stat.tcl:589: [WARN] (procs) Call to unknown command 'pdf-negative-binomial'
 third_party/tcllib/modules/math/pdf_stat.tcl:675: [WARN] (procs) Call to unknown command 'Initialise-cdf-normal'
 third_party/tcllib/modules/math/pdf_stat.tcl:738: [WARN] (procs) Call to unknown command 'Cdf-toms322'
-third_party/tcllib/modules/math/pdf_stat.tcl:744: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/math/pdf_stat.tcl:769: [WARN] (procs) Call to unknown command 'Inverse-cdf-uniform'
 third_party/tcllib/modules/math/pdf_stat.tcl:860: [WARN] (procs) Call to unknown command 'Inverse-cdf-exponential'
 third_party/tcllib/modules/math/pdf_stat.tcl:1109: [WARN] (variables) Variable '$p1' used but never defined in this scope
 third_party/tcllib/modules/math/pdf_stat.tcl:1110: [WARN] (procs) Call to unknown command 'Cdf-toms322'
-third_party/tcllib/modules/math/pdf_stat.tcl:1126: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/math/pdf_stat.tcl:1147: [WARN] (variables) Variable '$cdf' used but never defined in this scope
 third_party/tcllib/modules/math/pdf_stat.tcl:1184: [WARN] (procs) Call to unknown command 'cdf-uniform'
 third_party/tcllib/modules/math/pdf_stat.tcl:1187: [WARN] (procs) Call to unknown command 'HistogramMake'
@@ -19217,7 +19149,6 @@ third_party/tcllib/modules/math/pdf_stat.tcl:2383: [WARN] (procs) Call to unknow
 third_party/tcllib/modules/math/pdf_stat.tcl:2444: [WARN] (procs) Call to unknown command 'median'
 third_party/tcllib/modules/math/pdf_stat.tcl:2550: [WARN] (procs) Call to unknown command 'bootstrap'
 third_party/tcllib/modules/math/pdf_stat.tcl:2569: [WARN] (variables) Variable '$::argv0' used but never defined in this scope
-third_party/tcllib/modules/math/pdf_stat.tcl:2578: [WARN] (variables) Variable '$pexp' used but never defined in this scope
 third_party/tcllib/modules/math/primes.tcl:52: [WARN] (variables) Variable '$p' used but never defined in this scope
 third_party/tcllib/modules/math/primes.tcl:52: [WARN] (variables) Variable '$sqrtCandidate' used but never defined in this scope
 third_party/tcllib/modules/math/primes.tcl:52: [WARN] (variables) Variable '$p' used but never defined in this scope
@@ -19592,8 +19523,6 @@ third_party/tcllib/modules/math/linalg.tcl:1631: [WARN] (procs) Call to unknown 
 third_party/tcllib/modules/math/linalg.tcl:1632: [WARN] (procs) Call to unknown command 'getrow'
 third_party/tcllib/modules/math/linalg.tcl:1636: [WARN] (procs) Call to unknown command 'lset'
 third_party/tcllib/modules/math/linalg.tcl:1636: [WARN] (procs) Call to unknown command 'scale'
-third_party/tcllib/modules/math/linalg.tcl:1638: [ERROR] (builtins) 'for' accepts at most 4 argument(s), got 5
-third_party/tcllib/modules/math/linalg.tcl:1638: [WARN] (expressions) 'for' incr argument should be braced: use {incr}
 third_party/tcllib/modules/math/linalg.tcl:1639: [WARN] (procs) Call to unknown command 'getrow'
 third_party/tcllib/modules/math/linalg.tcl:1640: [WARN] (procs) Call to unknown command 'getrow'
 third_party/tcllib/modules/math/linalg.tcl:1644: [WARN] (procs) Call to unknown command 'lset'
@@ -19748,10 +19677,7 @@ third_party/tcllib/modules/math/probopt_diffev.tcl:149: [WARN] (procs) Call to u
 third_party/tcllib/modules/math/probopt_diffev.tcl:150: [WARN] (procs) Call to unknown command 'SelectIndex'
 third_party/tcllib/modules/math/probopt_diffev.tcl:151: [WARN] (procs) Call to unknown command 'SelectIndex'
 third_party/tcllib/modules/math/probopt_diffev.tcl:155: [WARN] (variables) Variable '$bestIndex' used but never defined in this scope
-third_party/tcllib/modules/math/probopt_diffev.tcl:156: [WARN] (variables) Variable '$c2' used but never defined in this scope
-third_party/tcllib/modules/math/probopt_diffev.tcl:156: [WARN] (variables) Variable '$c2' used but never defined in this scope
-third_party/tcllib/modules/math/probopt_diffev.tcl:156: [WARN] (variables) Variable '$cb' used but never defined in this scope
-third_party/tcllib/modules/math/probopt_diffev.tcl:156: [WARN] (variables) Variable '$cb' used but never defined in this scope
+third_party/tcllib/modules/math/probopt_diffev.tcl:155: [WARN] (variables) Variable '$bestIndex' used but never defined in this scope
 third_party/tcllib/modules/math/probopt_diffev.tcl:170: [WARN] (procs) Call to unknown command 'SelectIndex'
 third_party/tcllib/modules/math/probopt_diffev.tcl:171: [WARN] (procs) Call to unknown command 'SelectLength'
 third_party/tcllib/modules/math/probopt_diffev.tcl:176: [WARN] (procs) Call to unknown command 'lset'
@@ -20304,7 +20230,8 @@ third_party/tcllib/modules/math/bignum.tcl:429: [WARN] (variables) Variable '$::
 third_party/tcllib/modules/math/bignum.tcl:429: [WARN] (variables) Variable '$::math::bignum::atombits' is global but 'global ::math::bignum::atombits' not declared in this proc
 third_party/tcllib/modules/math/bignum.tcl:432: [WARN] (procs) Call to unknown command 'lset'
 third_party/tcllib/modules/math/bignum.tcl:444: [WARN] (procs) Call to unknown command 'lset'
-third_party/tcllib/modules/math/bignum.tcl:445: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/math/bignum.tcl:445: [WARN] (variables) Variable '$::math::bignum::atombits' is global but 'global ::math::bignum::atombits' not declared in this proc
+third_party/tcllib/modules/math/bignum.tcl:445: [WARN] (variables) Variable '$::math::bignum::atommask' is global but 'global ::math::bignum::atommask' not declared in this proc
 third_party/tcllib/modules/math/bignum.tcl:445: [WARN] (variables) Variable '$::math::bignum::atombits' is global but 'global ::math::bignum::atombits' not declared in this proc
 third_party/tcllib/modules/math/bignum.tcl:445: [WARN] (variables) Variable '$::math::bignum::atommask' is global but 'global ::math::bignum::atommask' not declared in this proc
 third_party/tcllib/modules/math/bignum.tcl:452: [WARN] (procs) Call to unknown command '_treat'
@@ -20740,7 +20667,6 @@ third_party/tcllib/modules/math/statistics.tcl:644: [WARN] (variables) Variable 
 third_party/tcllib/modules/math/statistics.tcl:793: [WARN] (procs) Call to unknown command 'crosscorr'
 third_party/tcllib/modules/math/statistics.tcl:824: [WARN] (procs) Call to unknown command 'basic-stats'
 third_party/tcllib/modules/math/statistics.tcl:825: [WARN] (procs) Call to unknown command 'basic-stats'
-third_party/tcllib/modules/math/statistics.tcl:848: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/math/statistics.tcl:892: [WARN] (variables) Variable '$i' used but never defined in this scope
 third_party/tcllib/modules/math/statistics.tcl:892: [WARN] (variables) Variable '$dlim' used but never defined in this scope
 third_party/tcllib/modules/math/statistics.tcl:892: [WARN] (variables) Variable '$i' used but never defined in this scope
@@ -22335,15 +22261,12 @@ third_party/tcllib/modules/report/report.tcl:1032: [WARN] (procs) Call to unknow
 third_party/tcllib/modules/report/report.tcl:1052: [WARN] (procs) Call to unknown command 'CheckMatrix'
 third_party/tcllib/modules/report/report.tcl:1053: [WARN] (procs) Call to unknown command 'ColumnSizes'
 third_party/tcllib/modules/report/report.tcl:1059: [WARN] (procs) Call to unknown command 'Separator'
-third_party/tcllib/modules/report/report.tcl:1063: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/report/report.tcl:1063: [WARN] (procs) Call to unknown command 'FormatData'
 third_party/tcllib/modules/report/report.tcl:1066: [WARN] (procs) Call to unknown command 'Separator'
 third_party/tcllib/modules/report/report.tcl:1070: [WARN] (procs) Call to unknown command 'Separator'
-third_party/tcllib/modules/report/report.tcl:1076: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/report/report.tcl:1076: [WARN] (procs) Call to unknown command 'FormatData'
 third_party/tcllib/modules/report/report.tcl:1080: [WARN] (procs) Call to unknown command 'Separator'
 third_party/tcllib/modules/report/report.tcl:1084: [WARN] (procs) Call to unknown command 'Separator'
-third_party/tcllib/modules/report/report.tcl:1087: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/report/report.tcl:1087: [WARN] (procs) Call to unknown command 'FormatData'
 third_party/tcllib/modules/report/report.tcl:1090: [WARN] (procs) Call to unknown command 'Separator'
 third_party/tcllib/modules/report/report.tcl:1096: [WARN] (procs) Call to unknown command 'Separator'
@@ -29023,7 +28946,6 @@ third_party/tcllib/modules/ripemd/pkgIndex.tcl:2: [WARN] (variables) Variable '$
 third_party/tcllib/modules/ripemd/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/ripemd/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/ripemd/pkgIndex.tcl:3: [WARN] (variables) Variable '$dir' used but never defined in this scope
-third_party/tcllib/modules/ripemd/ripemd128.tcl:54: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/ripemd/ripemd128.tcl:58: [WARN] (variables) Variable '$::tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd128.tcl:73: [WARN] (expressions) Unknown math function 'state()' in expression
 third_party/tcllib/modules/ripemd/ripemd128.tcl:85: [WARN] (procs) Call to unknown command 'RIPEMD128Hash'
@@ -29708,7 +29630,6 @@ third_party/tcllib/modules/ripemd/ripemd128.tcl:186: [WARN] (variables) Variable
 third_party/tcllib/modules/ripemd/ripemd128.tcl:186: [WARN] (variables) Variable '$CC' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd128.tcl:186: [WARN] (variables) Variable '$DD' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd128.tcl:430: [WARN] (procs) Call to unknown command '<<<'
-third_party/tcllib/modules/ripemd/ripemd128.tcl:481: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/ripemd/ripemd128.tcl:490: [WARN] (variables) Variable '$result' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd128.tcl:556: [WARN] (procs) Call to unknown command 'RIPEMD128Update'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:563: [WARN] (variables) Variable '$option' used but never defined in this scope
@@ -29738,7 +29659,6 @@ third_party/tcllib/modules/ripemd/ripemd128.tcl:650: [WARN] (procs) Call to unkn
 third_party/tcllib/modules/ripemd/ripemd128.tcl:651: [WARN] (procs) Call to unknown command 'RIPEHMAC128Final'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:652: [WARN] (procs) Call to unknown command 'RIPEHMAC128Final'
 third_party/tcllib/modules/ripemd/ripemd128.tcl:669: [WARN] (procs) Call to unknown command 'Hex'
-third_party/tcllib/modules/ripemd/ripemd160.tcl:55: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/ripemd/ripemd160.tcl:59: [WARN] (variables) Variable '$::tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:76: [WARN] (expressions) Unknown math function 'state()' in expression
 third_party/tcllib/modules/ripemd/ripemd160.tcl:93: [WARN] (procs) Call to unknown command 'RIPEMD160Hash'
@@ -29974,7 +29894,6 @@ third_party/tcllib/modules/ripemd/ripemd160.tcl:535: [WARN] (variables) Variable
 third_party/tcllib/modules/ripemd/ripemd160.tcl:543: [WARN] (variables) Variable '$RIPEMD160Hash_body' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:551: [WARN] (variables) Variable '$RIPEMD160Hash_body' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:559: [WARN] (variables) Variable '$RIPEMD160Hash_body' used but never defined in this scope
-third_party/tcllib/modules/ripemd/ripemd160.tcl:561: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/ripemd/ripemd160.tcl:567: [WARN] (variables) Variable '$RIPEMD160Hash_body' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:570: [WARN] (variables) Variable '$result' used but never defined in this scope
 third_party/tcllib/modules/ripemd/ripemd160.tcl:575: [WARN] (variables) Variable '$RIPEMD160Hash_body' used but never defined in this scope
@@ -30132,14 +30051,15 @@ third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:343: [WARN] (pr
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:383: [WARN] (procs) Call to unknown command 'load_exclusions'
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:389: [WARN] (procs) Call to unknown command 'load_tables'
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:390: [WARN] (procs) Call to unknown command 'buildTables'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:398: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:432: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:435: [WARN] (expressions) Unknown math function 'tmp()' in expression
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$CCLASS_OFFSET_BITS' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$CCLASS_COMMON_PAGE_MAP' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$cclassGroupMap' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$apage' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$CCLASS_OFFSET_BITS' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:487: [WARN] (variables) Variable '$CCLASS_OFFSET_BITS' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:521: [WARN] (expressions) Unknown math function 'tmp()' in expression
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:595: [WARN] (variables) Variable '$uc' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:595: [WARN] (variables) Variable '$DECOMP_OFFSET_BITS' used but never defined in this scope
@@ -30161,8 +30081,42 @@ third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:595: [WARN] (va
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:595: [WARN] (variables) Variable '$decomp_len' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:657: [WARN] (expressions) Unknown math function 'tmp()' in expression
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:763: [WARN] (expressions) Unknown math function 'comp_map()' in expression
-third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [ERROR] (syntax) Unclosed double-quote starting at line 772
-third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:853: [ERROR] (syntax) Unclosed double-quote starting at line 853
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_OFFSET_BITS' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_COMMON_PAGE_MAP' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$compGroupMap' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$apage' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_OFFSET_BITS' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_OFFSET_BITS' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_SINGLE_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_SECOND_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$compFirstList' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_SINGLE_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_SECOND_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$compSecondList' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info1' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info2' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info1' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_SECOND_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info2' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_SECOND_MASK' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_LENGTH1' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info1' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$info2' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:772: [WARN] (variables) Variable '$COMP_MASK' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_data.tcl:859: [WARN] (procs) 'return' used at global scope (outside a proc)
 third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:18: [WARN] (import) package require 'struct::list': not found in provided packages or stdlib
 third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:22: [WARN] (variables) Variable '$argv' used but never defined in this scope
@@ -30229,40 +30183,7 @@ third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:62: [WARN] (var
 third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:62: [WARN] (variables) Variable '$argv' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:62: [WARN] (variables) Variable '$argv' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:62: [WARN] (variables) Variable '$argv' used but never defined in this scope
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:74: [ERROR] (builtins) 'source' accepts at most 2 argument(s), got 3
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:75: [WARN] (procs) Call to unknown command '\[file'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:76: [WARN] (procs) Call to unknown command 'devtools'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:78: [WARN] (procs) Call to unknown command 'testsNeedTcl'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:79: [WARN] (procs) Call to unknown command 'testsNeedTcltest'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:81: [WARN] (procs) Call to unknown command 'testing'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:93: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:97: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:101: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:105: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:109: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:119: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:123: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:127: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:131: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:135: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:145: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:149: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:153: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:157: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:161: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:171: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:175: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:179: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:183: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:187: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:195: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:199: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:203: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:207: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:211: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:216: [WARN] (procs) Call to unknown command 'test'
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:222: [ERROR] (syntax) Unclosed double-quote starting at line 222
-third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:222: [ERROR] (syntax) Unclosed double-quote starting at line 222
+third_party/tcllib/modules/stringprep/tools/gen_unicode_test.tcl:64: [WARN] (variables) Variable '$Id' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:39: [WARN] (expressions) Unknown math function 'tablemap()' in expression
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:45: [WARN] (expressions) Unknown math function 'casemap2()' in expression
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:47: [WARN] (expressions) Unknown math function 'casemap()' in expression
@@ -30341,11 +30262,20 @@ third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:253: [WARN] 
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:264: [WARN] (procs) Call to unknown command 'addPage'
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:287: [WARN] (procs) Call to unknown command 'load_tables'
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:288: [WARN] (procs) Call to unknown command 'buildTables'
-third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:295: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:327: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:330: [WARN] (expressions) Unknown math function 'tmp()' in expression
-third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [ERROR] (syntax) Unclosed double-quote starting at line 445
-third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:502: [ERROR] (syntax) Unclosed double-quote starting at line 502
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$multiCaseTable' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$info' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$OFFSET_BITS' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$COMMON_PAGE_MAP' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$groupMap' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$apage' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$OFFSET_BITS' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$uc' used but never defined in this scope
+third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:445: [WARN] (variables) Variable '$OFFSET_BITS' used but never defined in this scope
 third_party/tcllib/modules/stringprep/tools/gen_stringprep_data.tcl:507: [WARN] (procs) 'return' used at global scope (outside a proc)
 third_party/tcllib/modules/hook/pkgIndex.tcl:5: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/hook/pkgIndex.tcl:5: [WARN] (variables) Variable '$dir' used but never defined in this scope
@@ -31106,7 +31036,6 @@ third_party/tcllib/modules/mime/mime.tcl:2355: [ERROR] (syntax) Unbalanced '{': 
 third_party/tcllib/modules/mime/mime.tcl:3887: [ERROR] (syntax) Unclosed double-quote opened at line 3887
 third_party/tcllib/modules/mime/smtp.tcl:113: [ERROR] (syntax) Unbalanced '{': 1 unclosed brace(s) (opened near line 113)
 third_party/tcllib/modules/mime/smtp.tcl:1496: [ERROR] (syntax) Unclosed double-quote opened at line 1496
-third_party/tcllib/modules/uri/urn-scheme.tcl:26: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/uri/urn-scheme.tcl:28: [WARN] (variables) Variable '$pattern' used but never defined in this scope
 third_party/tcllib/modules/uri/urn-scheme.tcl:28: [WARN] (expressions) Unknown math function 'parts()' in expression
 third_party/tcllib/modules/uri/urn-scheme.tcl:28: [WARN] (expressions) Unknown math function 'parts()' in expression
@@ -32626,7 +32555,6 @@ third_party/tcllib/modules/nmea/nmea.tcl:157: [WARN] (expressions) Unknown math 
 third_party/tcllib/modules/nmea/nmea.tcl:161: [WARN] (expressions) Unknown math function 'dispatch()' in expression
 third_party/tcllib/modules/nmea/nmea.tcl:188: [WARN] (expressions) Unknown math function 'dispatch()' in expression
 third_party/tcllib/modules/nmea/nmea.tcl:194: [WARN] (variables) unset 'dispatch($sentence)': variable not defined in current scope
-third_party/tcllib/modules/md4/md4.tcl:39: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/md4/md4.tcl:51: [WARN] (expressions) Unknown math function 'state()' in expression
 third_party/tcllib/modules/md4/md4.tcl:52: [WARN] (procs) Call to unknown command 'md4c'
 third_party/tcllib/modules/md4/md4.tcl:52: [WARN] (procs) Call to unknown command 'md4c'
@@ -33330,7 +33258,6 @@ third_party/tcllib/modules/ftp/ftp.tcl:2317: [WARN] (procs) Call to unknown comm
 third_party/tcllib/modules/ftp/ftp.tcl:2372: [WARN] (expressions) Unknown math function 'ftp()' in expression
 third_party/tcllib/modules/ftp/ftp.tcl:2373: [WARN] (procs) Call to unknown command 'DisplayMsg'
 third_party/tcllib/modules/ftp/ftp.tcl:2377: [WARN] (expressions) Unknown math function 'connections()' in expression
-third_party/tcllib/modules/ftp/ftp.tcl:2377: [ERROR] (builtins) 'info exists' accepts at most 1 argument(s), got 2
 third_party/tcllib/modules/ftp/ftp.tcl:2378: [WARN] (variables) unset 'connections($ftp(User),$ftp(Passwd),$ftp(RemoteHost),afterid)': variable not defined in current scope
 third_party/tcllib/modules/ftp/ftp.tcl:2379: [WARN] (variables) unset 'connections($ftp(User),$ftp(Passwd),$ftp(RemoteHost))': variable not defined in current scope
 third_party/tcllib/modules/ftp/ftp.tcl:2383: [WARN] (procs) Call to unknown command 'StateHandler'
@@ -33338,14 +33265,12 @@ third_party/tcllib/modules/ftp/ftp.tcl:2386: [WARN] (procs) Call to unknown comm
 third_party/tcllib/modules/ftp/ftp.tcl:2397: [WARN] (expressions) Unknown math function 'ftp()' in expression
 third_party/tcllib/modules/ftp/ftp.tcl:2398: [WARN] (procs) Call to unknown command 'DisplayMsg'
 third_party/tcllib/modules/ftp/ftp.tcl:2402: [WARN] (expressions) Unknown math function 'connections()' in expression
-third_party/tcllib/modules/ftp/ftp.tcl:2403: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/ftp/ftp.tcl:2465: [WARN] (procs) Call to unknown command 'DisplayMsg'
 third_party/tcllib/modules/ftp/ftp.tcl:2494: [WARN] (procs) Call to unknown command 'DisplayMsg'
 third_party/tcllib/modules/ftp/ftp.tcl:2497: [WARN] (variables) Variable '$first' used but never defined in this scope
 third_party/tcllib/modules/ftp/ftp.tcl:2497: [WARN] (variables) Variable '$rest' used but never defined in this scope
 third_party/tcllib/modules/ftp/ftp.tcl:2502: [WARN] (procs) Call to unknown command 'DisplayMsg'
 third_party/tcllib/modules/ftp/ftp.tcl:2505: [WARN] (expressions) Unknown math function 'connections()' in expression
-third_party/tcllib/modules/ftp/ftp.tcl:2505: [ERROR] (builtins) 'info exists' accepts at most 1 argument(s), got 2
 third_party/tcllib/modules/ftp/ftp.tcl:2507: [WARN] (procs) Call to unknown command 'Command'
 third_party/tcllib/modules/ftp/ftp.tcl:2526: [WARN] (procs) Call to unknown command 'Type'
 third_party/tcllib/modules/ftp/ftp.tcl:2526: [WARN] (procs) Call to unknown command 'Close'
@@ -33367,7 +33292,6 @@ third_party/tcllib/modules/ftp/ftp.tcl:2716: [WARN] (variables) unset 'ftp(state
 third_party/tcllib/modules/ftp/ftp.tcl:2718: [WARN] (procs) Call to unknown command 'DisplayMsg'
 third_party/tcllib/modules/ftp/ftp.tcl:2749: [WARN] (variables) unset 'ftp(state.data)': variable not defined in current scope
 third_party/tcllib/modules/ftp/ftp.tcl:2751: [WARN] (procs) Call to unknown command 'DisplayMsg'
-third_party/tcllib/modules/ftp/ftp.tcl:2782: [ERROR] (builtins) 'string range' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/ftp/ftp.tcl:2784: [WARN] (variables) unset 'ftp(state.data)': variable not defined in current scope
 third_party/tcllib/modules/ftp/ftp.tcl:2785: [WARN] (variables) unset 'ftp(state.data)': variable not defined in current scope
 third_party/tcllib/modules/ftp/ftp.tcl:2786: [WARN] (procs) Call to unknown command 'DisplayMsg'
@@ -33531,7 +33455,6 @@ third_party/tcllib/modules/pt/pt_peg_op.tcl:253: [WARN] (variables) Variable '$s
 third_party/tcllib/modules/pt/pt_peg_op.tcl:272: [WARN] (expressions) Unknown math function 'caller()' in expression
 third_party/tcllib/modules/pt/pt_peg_op.tcl:280: [WARN] (variables) Variable '$realizable' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_op.tcl:280: [WARN] (variables) Variable '$symbol' used but never defined in this scope
-third_party/tcllib/modules/pt/pt_peg_op.tcl:314: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/pt/pt_peg_op.tcl:361: [WARN] (procs) 'return' used at global scope (outside a proc)
 third_party/tcllib/modules/pt/pt_tclparam_config_nx.tcl:45: [WARN] (variables) Variable '$map' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_tclparam_config_nx.tcl:45: [WARN] (variables) Variable '$channel' used but never defined in this scope
@@ -33742,7 +33665,6 @@ third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:310: [WARN] (variables) Varia
 third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:310: [WARN] (variables) Variable '$msg' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:310: [WARN] (variables) Variable '$msg' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:310: [WARN] (variables) Variable '$msg' used but never defined in this scope
-third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:529: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:529: [WARN] (variables) Variable '$m' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:549: [WARN] (variables) Variable '$msg' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_cparam.tcl:549: [WARN] (variables) Variable '$msg' used but never defined in this scope
@@ -34017,10 +33939,6 @@ third_party/tcllib/modules/pt/text_write.tcl:59: [WARN] (procs) Call to unknown 
 third_party/tcllib/modules/pt/text_write.tcl:65: [WARN] (procs) Call to unknown command 'field'
 third_party/tcllib/modules/pt/text_write.tcl:79: [WARN] (procs) Call to unknown command 'reset'
 third_party/tcllib/modules/pt/text_write.tcl:87: [WARN] (procs) Call to unknown command 'reset'
-third_party/tcllib/modules/pt/text_write.tcl:111: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
-third_party/tcllib/modules/pt/text_write.tcl:111: [ERROR] (builtins) 'split' accepts at most 2 argument(s), got 4
-third_party/tcllib/modules/pt/text_write.tcl:118: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
-third_party/tcllib/modules/pt/text_write.tcl:118: [ERROR] (builtins) 'split' accepts at most 2 argument(s), got 4
 third_party/tcllib/modules/pt/text_write.tcl:142: [WARN] (variables) unset 'blocks($name)': variable not defined in current scope
 third_party/tcllib/modules/pt/text_write.tcl:170: [WARN] (variables) unset 'blocks($src)': variable not defined in current scope
 third_party/tcllib/modules/pt/text_write.tcl:236: [WARN] (procs) 'return' used at global scope (outside a proc)
@@ -35311,7 +35229,6 @@ third_party/tcllib/modules/pt/pt_pegrammar.tcl:11: [WARN] (import) package requi
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:58: [WARN] (expressions) Unknown math function 'peg()' in expression
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:62: [WARN] (variables) Variable '$peg' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:63: [WARN] (variables) Variable '$peg' used but never defined in this scope
-third_party/tcllib/modules/pt/pt_pegrammar.tcl:63: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:69: [WARN] (variables) Variable '$peg' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:69: [WARN] (procs) Call to unknown command 'VerifyRules'
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:70: [WARN] (variables) Variable '$canon' used but never defined in this scope
@@ -35370,7 +35287,6 @@ third_party/tcllib/modules/pt/pt_pegrammar.tcl:228: [WARN] (procs) Call to unkno
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:280: [WARN] (expressions) Unknown math function 'sd()' in expression
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:284: [WARN] (variables) Variable '$sd' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:285: [WARN] (variables) Variable '$sd' used but never defined in this scope
-third_party/tcllib/modules/pt/pt_pegrammar.tcl:285: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:290: [WARN] (variables) Variable '$sd' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:290: [WARN] (expressions) Unknown math function 'ourmode()' in expression
 third_party/tcllib/modules/pt/pt_pegrammar.tcl:291: [WARN] (variables) Variable '$sd' used but never defined in this scope
@@ -35407,7 +35323,6 @@ third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:180: [WARN] (procs) Call to
 third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:213: [WARN] (procs) Call to unknown command 'Expression'
 third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:224: [WARN] (variables) Variable '$result' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:224: [WARN] (variables) Variable '$result' used but never defined in this scope
-third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:372: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:423: [WARN] (variables) Variable '$str' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:423: [WARN] (variables) Variable '$str' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_tclparam.tcl:440: [WARN] (variables) Variable '$cl' used but never defined in this scope
@@ -35482,7 +35397,6 @@ third_party/tcllib/modules/pt/pt_peg_to_param.tcl:173: [WARN] (variables) Variab
 third_party/tcllib/modules/pt/pt_peg_to_param.tcl:173: [WARN] (variables) Variable '$found' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_param.tcl:173: [WARN] (variables) Variable '$found' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_param.tcl:173: [WARN] (variables) Variable '$found' used but never defined in this scope
-third_party/tcllib/modules/pt/pt_peg_to_param.tcl:328: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/pt/pt_peg_to_param.tcl:328: [WARN] (variables) Variable '$inline' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_param.tcl:354: [WARN] (variables) Variable '$inline' used but never defined in this scope
 third_party/tcllib/modules/pt/pt_peg_to_param.tcl:355: [WARN] (variables) Variable '$c' used but never defined in this scope
@@ -38312,11 +38226,6 @@ third_party/tcllib/modules/dns/dns.tcl:1391: [WARN] (variables) Variable '$class
 third_party/tcllib/modules/dns/dns.tcl:1391: [WARN] (variables) Variable '$hostOrPort' used but never defined in this scope
 third_party/tcllib/modules/dns/dns.tcl:1391: [WARN] (variables) Variable '$query' used but never defined in this scope
 third_party/tcllib/modules/dns/dns.tcl:1391: [WARN] (variables) Variable '$schemepart' used but never defined in this scope
-third_party/tcllib/modules/dns/dns.tcl:1410: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
-third_party/tcllib/modules/dns/dns.tcl:1411: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
-third_party/tcllib/modules/dns/dns.tcl:1412: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
-third_party/tcllib/modules/dns/dns.tcl:1413: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
-third_party/tcllib/modules/dns/dns.tcl:1414: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/dns/dns.tcl:1419: [WARN] (variables) Variable '$schemepart' used but never defined in this scope
 third_party/tcllib/modules/dns/dns.tcl:1422: [WARN] (variables) Variable '$classOrTypeSpec' used but never defined in this scope
 third_party/tcllib/modules/dns/dns.tcl:1422: [WARN] (variables) Variable '$classOrTypeSpec' used but never defined in this scope
@@ -38670,6 +38579,8 @@ third_party/tcllib/modules/png/png.tcl:213: [WARN] (variables) Variable '$type' 
 third_party/tcllib/modules/png/png.tcl:214: [WARN] (variables) Variable '$len' used but never defined in this scope
 third_party/tcllib/modules/png/png.tcl:214: [WARN] (variables) Variable '$len' used but never defined in this scope
 third_party/tcllib/modules/png/png.tcl:214: [WARN] (variables) Variable '$len' used but never defined in this scope
+third_party/tcllib/modules/png/png.tcl:218: [WARN] (variables) Variable '$ppux' used but never defined in this scope
+third_party/tcllib/modules/png/png.tcl:218: [WARN] (variables) Variable '$ppuy' used but never defined in this scope
 third_party/tcllib/modules/png/png.tcl:218: [WARN] (variables) Variable '$ppux' used but never defined in this scope
 third_party/tcllib/modules/png/png.tcl:218: [WARN] (variables) Variable '$ppuy' used but never defined in this scope
 third_party/tcllib/modules/png/png.tcl:218: [WARN] (variables) Variable '$ppux' used but never defined in this scope
@@ -39694,10 +39605,7 @@ third_party/tcllib/modules/amazon-s3/S3.tcl:117: [WARN] (variables) Variable '$i
 third_party/tcllib/modules/amazon-s3/S3.tcl:117: [WARN] (variables) Variable '$items' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:121: [WARN] (procs) Call to unknown command 'registry'
 third_party/tcllib/modules/amazon-s3/S3.tcl:168: [ERROR] (builtins) 'llength' accepts at most 1 argument(s), got 5
-third_party/tcllib/modules/amazon-s3/S3.tcl:186: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:194: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:197: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:247: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/amazon-s3/S3.tcl:276: [WARN] (procs) Call to unknown command '-a-zA-Z0-9/.,_'
 third_party/tcllib/modules/amazon-s3/S3.tcl:282: [WARN] (variables) Variable '$hex' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:321: [WARN] (procs) Call to unknown command 'checkinit'
@@ -39714,8 +39622,6 @@ third_party/tcllib/modules/amazon-s3/S3.tcl:502: [WARN] (variables) Variable '$l
 third_party/tcllib/modules/amazon-s3/S3.tcl:507: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:508: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:508: [WARN] (variables) Variable '$line' used but never defined in this scope
-third_party/tcllib/modules/amazon-s3/S3.tcl:626: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:635: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:658: [WARN] (variables) Variable '$res' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:658: [WARN] (variables) Variable '$res' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:658: [WARN] (variables) Variable '$res' used but never defined in this scope
@@ -39733,15 +39639,11 @@ third_party/tcllib/modules/amazon-s3/S3.tcl:658: [WARN] (variables) Variable '$t
 third_party/tcllib/modules/amazon-s3/S3.tcl:658: [WARN] (variables) Variable '$timer' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:658: [WARN] (variables) Variable '$timer' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:660: [WARN] (procs) Call to unknown command 'bgvar'
-third_party/tcllib/modules/amazon-s3/S3.tcl:672: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 5
 third_party/tcllib/modules/amazon-s3/S3.tcl:681: [WARN] (procs) Call to unknown command 'bgvar'
-third_party/tcllib/modules/amazon-s3/S3.tcl:695: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:701: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:711: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:752: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:776: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:800: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:814: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:819: [ERROR] (syntax) Unclosed double-quote starting at line 819
 third_party/tcllib/modules/amazon-s3/S3.tcl:820: [ERROR] (syntax) Unclosed bracket '[' starting at line 820
 third_party/tcllib/modules/amazon-s3/S3.tcl:820: [ERROR] (syntax) Unclosed bracket '[' starting at line 820
@@ -39759,31 +39661,23 @@ third_party/tcllib/modules/amazon-s3/S3.tcl:848: [WARN] (variables) Variable '$t
 third_party/tcllib/modules/amazon-s3/S3.tcl:848: [WARN] (variables) Variable '$k0' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:848: [WARN] (variables) Variable '$k0' used but never defined in this scope
 third_party/tcllib/modules/amazon-s3/S3.tcl:858: [WARN] (expressions) Unbraced 'expr': combine into a single braced argument {expr {"true" ...}}
-third_party/tcllib/modules/amazon-s3/S3.tcl:963: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:967: [ERROR] (syntax) Unclosed bracket '[' starting at line 967
 third_party/tcllib/modules/amazon-s3/S3.tcl:967: [ERROR] (syntax) Unclosed bracket '[' starting at line 967
 third_party/tcllib/modules/amazon-s3/S3.tcl:967: [ERROR] (syntax) Unclosed bracket '[' starting at line 967
 third_party/tcllib/modules/amazon-s3/S3.tcl:975: [WARN] (expressions) Unbraced 'expr' argument: use {expr {...}} to avoid double-substitution
-third_party/tcllib/modules/amazon-s3/S3.tcl:982: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:1015: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:1064: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1097: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1115: [ERROR] (syntax) Unclosed bracket '[' starting at line 1115
 third_party/tcllib/modules/amazon-s3/S3.tcl:1115: [ERROR] (syntax) Unclosed bracket '[' starting at line 1115
-third_party/tcllib/modules/amazon-s3/S3.tcl:1128: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1181: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1196: [ERROR] (syntax) Unclosed bracket '[' starting at line 1196
 third_party/tcllib/modules/amazon-s3/S3.tcl:1196: [ERROR] (syntax) Unclosed bracket '[' starting at line 1196
 third_party/tcllib/modules/amazon-s3/S3.tcl:1223: [WARN] (variables) Variable '$x' used but never defined in this scope
-third_party/tcllib/modules/amazon-s3/S3.tcl:1224: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1246: [ERROR] (syntax) Unclosed bracket '[' starting at line 1246
 third_party/tcllib/modules/amazon-s3/S3.tcl:1246: [ERROR] (syntax) Unclosed bracket '[' starting at line 1246
 third_party/tcllib/modules/amazon-s3/S3.tcl:1261: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1297: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:1310: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1391: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1434: [WARN] (procs) Call to unknown command 'enowner'
-third_party/tcllib/modules/amazon-s3/S3.tcl:1436: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1436: [WARN] (procs) Call to unknown command 'engrant'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1436: [WARN] (procs) Call to unknown command 'engrant'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1436: [WARN] (procs) Call to unknown command 'engrant'
@@ -39799,15 +39693,8 @@ third_party/tcllib/modules/amazon-s3/S3.tcl:1448: [WARN] (procs) Call to unknown
 third_party/tcllib/modules/amazon-s3/S3.tcl:1479: [WARN] (procs) Call to unknown command 'checkinit'
 third_party/tcllib/modules/amazon-s3/S3.tcl:1512: [ERROR] (syntax) Unclosed bracket '[' starting at line 1512
 third_party/tcllib/modules/amazon-s3/S3.tcl:1575: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:1607: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:1613: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:1628: [ERROR] (builtins) 'dict incr' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1675: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:1706: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:1712: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
-third_party/tcllib/modules/amazon-s3/S3.tcl:1728: [ERROR] (builtins) 'dict incr' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/amazon-s3/S3.tcl:1784: [WARN] (procs) Call to unknown command 'checkinit'
-third_party/tcllib/modules/amazon-s3/S3.tcl:1812: [ERROR] (builtins) 'error' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/nettool/nettool.tcl:23: [WARN] (import) package require 'platform': not found in provided packages or stdlib
 third_party/tcllib/modules/nettool/nettool.tcl:25: [WARN] (import) package require 'ip': not found in provided packages or stdlib
 third_party/tcllib/modules/nettool/nettool.tcl:30: [WARN] (expressions) Unbraced 'if' condition: use {condition} to prevent double-substitution
@@ -40943,14 +40830,9 @@ third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [WARN] (variables) Var
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/pkgIndex.tcl:7: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:42: [WARN] (procs) Call to unknown command 'MakeParser'
-third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:85: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:85: [WARN] (variables) Variable '$symList' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:85: [WARN] (variables) Variable '$vallist' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:85: [WARN] (variables) Variable '$clientData' used but never defined in this scope
-third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:89: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:91: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:93: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:95: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:137: [WARN] (variables) Variable '$item' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:137: [WARN] (variables) Variable '$Edges' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:137: [WARN] (variables) Variable '$state' used but never defined in this scope
@@ -41040,7 +40922,6 @@ third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:283: [WARN] (variab
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:284: [WARN] (procs) Call to unknown command 'lset'
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:284: [WARN] (procs) Call to unknown command 'DeriveEpsilon'
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:286: [WARN] (procs) Call to unknown command 'lset'
-third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:288: [ERROR] (builtins) 'dict for' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:288: [WARN] (variables) Variable '$key' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:288: [WARN] (variables) Variable '$key' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-runtime.tcl:288: [WARN] (variables) Variable '$key' used but never defined in this scope
@@ -41067,14 +40948,9 @@ third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:70: [WARN] (procs) Ca
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:72: [WARN] (procs) Call to unknown command 'DumpAutomaton'
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:74: [WARN] (procs) Call to unknown command 'NeverReduced'
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:78: [WARN] (variables) unset '${name}::Items': variable not defined in current scope
-third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:105: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:105: [WARN] (variables) Variable '$symList' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:105: [WARN] (variables) Variable '$vallist' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:105: [WARN] (variables) Variable '$clientData' used but never defined in this scope
-third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:109: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:111: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:113: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:115: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:164: [WARN] (procs) Call to unknown command 'MakeAction'
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:175: [WARN] (variables) Variable '$_' used but never defined in this scope
 third_party/tcllib/modules/grammar_aycock/aycock-build.tcl:175: [WARN] (variables) Variable '$_' used but never defined in this scope
@@ -41301,7 +41177,8 @@ third_party/tcllib/modules/log/loggerAppender.tcl:125: [WARN] (variables) Variab
 third_party/tcllib/modules/log/loggerAppender.tcl:125: [WARN] (variables) Variable '$opt' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:128: [WARN] (variables) Variable '$appenderArgs' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:158: [WARN] (procs) Call to unknown command 'genProcName'
-third_party/tcllib/modules/log/loggerAppender.tcl:163: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/log/loggerAppender.tcl:163: [WARN] (variables) Variable '$service' used but never defined in this scope
+third_party/tcllib/modules/log/loggerAppender.tcl:163: [WARN] (variables) Variable '$level' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:163: [WARN] (variables) Variable '$service' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:163: [WARN] (variables) Variable '$level' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:223: [WARN] (variables) Variable '$opt' used but never defined in this scope
@@ -41310,7 +41187,8 @@ third_party/tcllib/modules/log/loggerAppender.tcl:223: [WARN] (variables) Variab
 third_party/tcllib/modules/log/loggerAppender.tcl:226: [WARN] (variables) Variable '$appenderArgs' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:256: [WARN] (procs) Call to unknown command 'genProcName'
 third_party/tcllib/modules/log/loggerAppender.tcl:263: [WARN] (variables) Variable '$newCPattern' used but never defined in this scope
-third_party/tcllib/modules/log/loggerAppender.tcl:265: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/log/loggerAppender.tcl:265: [WARN] (variables) Variable '$service' used but never defined in this scope
+third_party/tcllib/modules/log/loggerAppender.tcl:265: [WARN] (variables) Variable '$level' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:265: [WARN] (variables) Variable '$service' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:265: [WARN] (variables) Variable '$level' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:324: [WARN] (variables) Variable '$opt' used but never defined in this scope
@@ -41318,7 +41196,9 @@ third_party/tcllib/modules/log/loggerAppender.tcl:324: [WARN] (variables) Variab
 third_party/tcllib/modules/log/loggerAppender.tcl:324: [WARN] (variables) Variable '$opt' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:327: [WARN] (variables) Variable '$appenderArgs' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:361: [WARN] (procs) Call to unknown command 'genProcName'
-third_party/tcllib/modules/log/loggerAppender.tcl:366: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/modules/log/loggerAppender.tcl:366: [WARN] (variables) Variable '$service' used but never defined in this scope
+third_party/tcllib/modules/log/loggerAppender.tcl:366: [WARN] (variables) Variable '$outputChannel' used but never defined in this scope
+third_party/tcllib/modules/log/loggerAppender.tcl:366: [WARN] (variables) Variable '$level' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:366: [WARN] (variables) Variable '$service' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:366: [WARN] (variables) Variable '$outputChannel' used but never defined in this scope
 third_party/tcllib/modules/log/loggerAppender.tcl:366: [WARN] (variables) Variable '$level' used but never defined in this scope
@@ -41488,7 +41368,6 @@ third_party/tcllib/modules/mkdoc/mkdoc.tcl:253: [WARN] (variables) Variable '$in
 third_party/tcllib/modules/mkdoc/mkdoc.tcl:253: [WARN] (variables) Variable '$include' used but never defined in this scope
 third_party/tcllib/modules/mkdoc/mkdoc.tcl:254: [WARN] (variables) Variable '$iline' used but never defined in this scope
 third_party/tcllib/modules/mkdoc/mkdoc.tcl:256: [WARN] (variables) Variable '$iline' used but never defined in this scope
-third_party/tcllib/modules/mkdoc/mkdoc.tcl:271: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/mkdoc/mkdoc.tcl:274: [WARN] (procs) Call to unknown command 'hook'
 third_party/tcllib/modules/mkdoc/mkdoc.tcl:290: [WARN] (procs) Call to unknown command 'hook'
 third_party/tcllib/modules/mkdoc/mkdoc.tcl:302: [WARN] (variables) Variable '$arg' used but never defined in this scope
@@ -42520,7 +42399,6 @@ third_party/tcllib/modules/simulation/montecarlo.tcl:117: [WARN] (variables) Var
 third_party/tcllib/modules/simulation/montecarlo.tcl:117: [WARN] (variables) Variable '$x' used but never defined in this scope
 third_party/tcllib/modules/simulation/montecarlo.tcl:117: [WARN] (variables) Variable '$y' used but never defined in this scope
 third_party/tcllib/modules/simulation/montecarlo.tcl:117: [WARN] (variables) Variable '$z' used but never defined in this scope
-third_party/tcllib/modules/simulation/montecarlo.tcl:197: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/modules/simulation/montecarlo.tcl:197: [WARN] (variables) Variable '$trial' used but never defined in this scope
 third_party/tcllib/modules/simulation/montecarlo.tcl:197: [WARN] (variables) Variable '$trial' used but never defined in this scope
 third_party/tcllib/modules/simulation/montecarlo.tcl:213: [WARN] (procs) Call to unknown command 'DoExperiment'
@@ -42553,7 +42431,6 @@ third_party/tcllib/modules/simulation/montecarlo.tcl:453: [WARN] (variables) Var
 third_party/tcllib/modules/sha1/sha256c.tcl:15: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha1.tcl:57: [WARN] (variables) Variable '$key' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha1.tcl:150: [WARN] (expressions) Unknown math function 'accel()' in expression
-third_party/tcllib/modules/sha1/sha1.tcl:189: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/sha1/sha1.tcl:193: [WARN] (variables) Variable '$::tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha1.tcl:222: [WARN] (expressions) Unknown math function 'state()' in expression
 third_party/tcllib/modules/sha1/sha1.tcl:223: [WARN] (procs) Call to unknown command 'sha1c'
@@ -42862,14 +42739,12 @@ third_party/tcllib/modules/sha1/pkgIndex.tcl:5: [WARN] (variables) Variable '$di
 third_party/tcllib/modules/sha1/pkgIndex.tcl:5: [WARN] (variables) Variable '$dir' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha256.tcl:62: [WARN] (variables) Variable '$key' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha256.tcl:142: [WARN] (expressions) Unknown math function 'accel()' in expression
-third_party/tcllib/modules/sha1/sha256.tcl:197: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/sha1/sha256.tcl:207: [WARN] (procs) Call to unknown command 'sha256c_init256'
 third_party/tcllib/modules/sha1/sha256.tcl:232: [WARN] (procs) Call to unknown command 'SHA256Transform'
 third_party/tcllib/modules/sha1/sha256.tcl:243: [WARN] (procs) Call to unknown command 'sha256c_update'
 third_party/tcllib/modules/sha1/sha256.tcl:258: [WARN] (procs) Call to unknown command 'SHA256Penultimate'
 third_party/tcllib/modules/sha1/sha256.tcl:261: [WARN] (procs) Call to unknown command 'bytes'
 third_party/tcllib/modules/sha1/sha256.tcl:298: [WARN] (procs) Call to unknown command 'SHA256Transform'
-third_party/tcllib/modules/sha1/sha256.tcl:310: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/sha1/sha256.tcl:320: [WARN] (procs) Call to unknown command 'sha256c_init224'
 third_party/tcllib/modules/sha1/sha256.tcl:328: [WARN] (procs) Call to unknown command 'SHA256Penultimate'
 third_party/tcllib/modules/sha1/sha256.tcl:331: [WARN] (procs) Call to unknown command 'bytes'
@@ -42963,7 +42838,6 @@ third_party/tcllib/modules/sha1/sha256.tcl:717: [WARN] (procs) Call to unknown c
 third_party/tcllib/modules/sha1/sha256.tcl:718: [WARN] (procs) Call to unknown command 'HMACFinal'
 third_party/tcllib/modules/sha1/sha256.tcl:720: [WARN] (procs) Call to unknown command 'HMACFinal'
 third_party/tcllib/modules/sha1/sha256.tcl:737: [WARN] (procs) Call to unknown command 'Hex'
-third_party/tcllib/modules/sha1/sha1v1.tcl:53: [ERROR] (builtins) 'array set' accepts at most 2 argument(s), got 3
 third_party/tcllib/modules/sha1/sha1v1.tcl:57: [WARN] (variables) Variable '$::tcl_platform' used but never defined in this scope
 third_party/tcllib/modules/sha1/sha1v1.tcl:86: [WARN] (expressions) Unknown math function 'state()' in expression
 third_party/tcllib/modules/sha1/sha1v1.tcl:87: [WARN] (procs) Call to unknown command 'sha1c'
@@ -45914,6 +45788,7 @@ third_party/tcllib/modules/docstrip/docstrip_util.tcl:52: [WARN] (procs) Call to
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:76: [WARN] (procs) Call to unknown command 'Report'
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:80: [WARN] (variables) Variable '$O' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:80: [WARN] (variables) Variable '$O' used but never defined in this scope
+third_party/tcllib/modules/docstrip/docstrip_util.tcl:80: [WARN] (variables) Variable '$O' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:80: [WARN] (procs) Call to unknown command 'extract'
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:96: [WARN] (expressions) Unknown math function 'O()' in expression
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:104: [WARN] (variables) Variable '$O' used but never defined in this scope
@@ -45923,6 +45798,7 @@ third_party/tcllib/modules/docstrip/docstrip_util.tcl:124: [WARN] (procs) Call t
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:124: [WARN] (procs) Call to unknown command 'extract'
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:159: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:159: [WARN] (variables) Variable '$Opt' used but never defined in this scope
+third_party/tcllib/modules/docstrip/docstrip_util.tcl:159: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:159: [WARN] (procs) Call to unknown command 'extract'
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
@@ -45930,6 +45806,10 @@ third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Va
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
+third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
+third_party/tcllib/modules/docstrip/docstrip_util.tcl:164: [WARN] (variables) Variable '$Opt' used but never defined in this scope
+third_party/tcllib/modules/docstrip/docstrip_util.tcl:168: [WARN] (variables) Variable '$Opt' used but never defined in this scope
+third_party/tcllib/modules/docstrip/docstrip_util.tcl:168: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:168: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:168: [WARN] (variables) Variable '$Opt' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:168: [WARN] (variables) Variable '$Opt' used but never defined in this scope
@@ -45952,10 +45832,8 @@ third_party/tcllib/modules/docstrip/docstrip_util.tcl:410: [WARN] (procs) Call t
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:416: [WARN] (variables) Variable '$O' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:435: [WARN] (variables) Variable '$O' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:435: [WARN] (procs) Call to unknown command '0-'
-third_party/tcllib/modules/docstrip/docstrip_util.tcl:468: [WARN] (expressions) Unbraced 'if' condition: use {condition} to prevent double-substitution
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:481: [WARN] (variables) unset 'from': variable not defined in current scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:481: [WARN] (variables) unset 'to': variable not defined in current scope
-third_party/tcllib/modules/docstrip/docstrip_util.tcl:482: [WARN] (expressions) 'for' cond argument should be braced: use {cond}
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:483: [WARN] (expressions) Unknown math function 'lift()' in expression
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:510: [WARN] (variables) Variable '$eprefix' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:510: [WARN] (variables) Variable '$eprefix' used but never defined in this scope
@@ -45964,7 +45842,6 @@ third_party/tcllib/modules/docstrip/docstrip_util.tcl:512: [WARN] (variables) Va
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:512: [WARN] (variables) Variable '$from' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:512: [WARN] (variables) Variable '$to' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:514: [WARN] (variables) Variable '$eprefix' used but never defined in this scope
-third_party/tcllib/modules/docstrip/docstrip_util.tcl:566: [WARN] (expressions) Unbraced 'if' condition: use {condition} to prevent double-substitution
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:568: [WARN] (variables) Variable '$start1' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:568: [WARN] (variables) Variable '$end1' used but never defined in this scope
 third_party/tcllib/modules/docstrip/docstrip_util.tcl:568: [WARN] (variables) Variable '$start2' used but never defined in this scope
@@ -49078,8 +48955,6 @@ third_party/tcllib/modules/devtools/testutilities.tcl:72: [WARN] (import) packag
 third_party/tcllib/modules/devtools/testutilities.tcl:123: [WARN] (variables) unset 'env($k)': variable not defined in current scope
 third_party/tcllib/modules/devtools/testutilities.tcl:138: [WARN] (variables) unset 'array($k)': variable not defined in current scope
 third_party/tcllib/modules/devtools/testutilities.tcl:176: [WARN] (expressions) Unknown math function 'testConstraints()' in expression
-third_party/tcllib/modules/devtools/testutilities.tcl:312: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
-third_party/tcllib/modules/devtools/testutilities.tcl:315: [ERROR] (procs) proc definition must have exactly 3 arguments: name arglist body
 third_party/tcllib/modules/devtools/testutilities.tcl:329: [WARN] (procs) Call to unknown command 'makeFile'
 third_party/tcllib/modules/devtools/testutilities.tcl:390: [WARN] (variables) Variable '$asset' used but never defined in this scope
 third_party/tcllib/modules/devtools/testutilities.tcl:413: [WARN] (variables) Variable '$script dir' used but never defined in this scope
@@ -49367,11 +49242,9 @@ third_party/tcllib/modules/uev/uevent.tcl:149: [WARN] (variables) Variable '$eve
 third_party/tcllib/modules/uev/uevent.tcl:149: [WARN] (variables) Variable '$res' used but never defined in this scope
 third_party/tcllib/modules/uev/uevent.tcl:199: [WARN] (procs) Call to unknown command 'Place'
 third_party/tcllib/modules/uev/uevent.tcl:200: [WARN] (variables) Variable '$new' used but never defined in this scope
-third_party/tcllib/modules/uev/uevent.tcl:211: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/uev/uevent.tcl:226: [WARN] (procs) Call to unknown command 'Remove'
 third_party/tcllib/modules/uev/uevent.tcl:254: [WARN] (procs) Call to unknown command 'Place'
 third_party/tcllib/modules/uev/uevent.tcl:255: [WARN] (variables) Variable '$new' used but never defined in this scope
-third_party/tcllib/modules/uev/uevent.tcl:266: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/modules/uev/uevent.tcl:283: [WARN] (procs) Call to unknown command 'Remove'
 third_party/tcllib/modules/uev/uevent.tcl:386: [WARN] (expressions) Unknown math function 'ex()' in expression
 third_party/tcllib/modules/uev/uevent.tcl:392: [WARN] (procs) Call to unknown command 'NewToken'
@@ -49422,10 +49295,7 @@ third_party/tcllib/sak.tcl:452: [WARN] (procs) Call to unknown command 'auto_exe
 third_party/tcllib/sak.tcl:460: [WARN] (procs) Call to unknown command 'auto_execok'
 third_party/tcllib/sak.tcl:645: [WARN] (variables) unset '_': variable not defined in current scope
 third_party/tcllib/sak.tcl:722: [WARN] (import) package require 'sak::doc': not found in provided packages or stdlib
-third_party/tcllib/sak.tcl:745: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
-third_party/tcllib/sak.tcl:758: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/sak.tcl:773: [WARN] (procs) proc 'docfiles' redefined (previously defined at third_party/tcllib/sak.tcl:762)
-third_party/tcllib/sak.tcl:784: [ERROR] (builtins) 'string map' accepts at most 3 argument(s), got 4
 third_party/tcllib/sak.tcl:817: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/sak.tcl:817: [WARN] (variables) Variable '$name' used but never defined in this scope
 third_party/tcllib/sak.tcl:817: [WARN] (variables) Variable '$name' used but never defined in this scope
@@ -49441,7 +49311,6 @@ third_party/tcllib/sak.tcl:872: [WARN] (expressions) Unknown math function 'pp()
 third_party/tcllib/sak.tcl:877: [WARN] (expressions) Unknown math function 'ip()' in expression
 third_party/tcllib/sak.tcl:884: [WARN] (expressions) Unknown math function 'pp()' in expression
 third_party/tcllib/sak.tcl:930: [WARN] (expressions) Unbraced 'if' condition: use {condition} to prevent double-substitution
-third_party/tcllib/sak.tcl:931: [ERROR] (builtins) 'split' accepts at most 2 argument(s), got 3
 third_party/tcllib/sak.tcl:973: [WARN] (expressions) Unknown math function 'DATA()' in expression
 third_party/tcllib/sak.tcl:981: [WARN] (variables) unset 'tmp': variable not defined in current scope
 third_party/tcllib/sak.tcl:1002: [WARN] (expressions) Unbraced 'if' condition: use {condition} to prevent double-substitution
@@ -49488,7 +49357,6 @@ third_party/tcllib/sak.tcl:1681: [WARN] (variables) Variable '$val' used but nev
 third_party/tcllib/sak.tcl:1681: [WARN] (variables) Variable '$val' used but never defined in this scope
 third_party/tcllib/sak.tcl:1681: [WARN] (variables) Variable '$val' used but never defined in this scope
 third_party/tcllib/sak.tcl:1681: [WARN] (variables) Variable '$val' used but never defined in this scope
-third_party/tcllib/sak.tcl:1725: [ERROR] (procs) '_bench_write' accepts at most 4 argument(s), got 6
 third_party/tcllib/sak.tcl:1735: [WARN] (variables) Variable '$option' used but never defined in this scope
 third_party/tcllib/sak.tcl:1735: [WARN] (variables) Variable '$val' used but never defined in this scope
 third_party/tcllib/sak.tcl:1735: [WARN] (variables) Variable '$val' used but never defined in this scope
@@ -50817,7 +50685,6 @@ third_party/tcllib/support/devel/all.tcl:55: [WARN] (variables) unset 'foo': var
 third_party/tcllib/support/devel/all.tcl:58: [WARN] (expressions) Unknown math function 'skippedBecause()' in expression
 third_party/tcllib/support/devel/all.tcl:77: [WARN] (import) package require 'tcltest': not found in provided packages or stdlib
 third_party/tcllib/support/devel/all.tcl:78: [WARN] (import) namespace import '::tcltest::*': no procs found in namespace '::tcltest'
-third_party/tcllib/support/devel/all.tcl:82: [ERROR] (builtins) 'file dirname' accepts at most 1 argument(s), got 2
 third_party/tcllib/support/devel/all.tcl:105: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
 third_party/tcllib/support/devel/all.tcl:105: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
 third_party/tcllib/support/devel/all.tcl:105: [WARN] (variables) Variable '$tcl_platform' used but never defined in this scope
@@ -50906,7 +50773,6 @@ third_party/tcllib/installer.tcl:165: [WARN] (procs) Call to unknown command '.l
 third_party/tcllib/installer.tcl:166: [WARN] (procs) Call to unknown command '.l.t'
 third_party/tcllib/installer.tcl:173: [WARN] (procs) Call to unknown command '.l.t'
 third_party/tcllib/installer.tcl:174: [WARN] (procs) Call to unknown command '.l.t'
-third_party/tcllib/installer.tcl:239: [ERROR] (procs) 'get_input' accepts at most 1 argument(s), got 2
 third_party/tcllib/installer.tcl:291: [WARN] (variables) Variable '$::auto_path' used but never defined in this scope
 third_party/tcllib/installer.tcl:293: [WARN] (variables) Variable '$::auto_path' used but never defined in this scope
 third_party/tcllib/installer.tcl:393: [WARN] (procs) Call to unknown command 'tk_chooseDirectory'
@@ -51165,7 +51031,6 @@ third_party/tcllib/examples/mapproj/tkmap.tcl:163: [WARN] (variables) Variable '
 third_party/tcllib/examples/mapproj/tkmap.tcl:163: [WARN] (variables) Variable '$lat' used but never defined in this scope
 third_party/tcllib/examples/mapproj/tkmap.tcl:163: [WARN] (variables) Variable '$lon' used but never defined in this scope
 third_party/tcllib/examples/mapproj/tkmap.tcl:163: [WARN] (variables) Variable '$lat' used but never defined in this scope
-third_party/tcllib/examples/mapproj/tkmap.tcl:175: [ERROR] (builtins) 'namespace code' accepts at most 1 argument(s), got 2
 third_party/tcllib/examples/mapproj/tkmap.tcl:181: [WARN] (procs) Call to unknown command ''
 third_party/tcllib/examples/mapproj/tkmap.tcl:211: [WARN] (variables) Variable '$lastx' used but never defined in this scope
 third_party/tcllib/examples/mapproj/tkmap.tcl:211: [WARN] (variables) Variable '$lasty' used but never defined in this scope
@@ -51298,10 +51163,8 @@ third_party/tcllib/examples/math/bigfloat.demo.tcl:287: [WARN] (variables) Varia
 third_party/tcllib/examples/math/bigfloat.demo.tcl:287: [WARN] (variables) Variable '$::stack' used but never defined in this scope
 third_party/tcllib/examples/htmlparse/webviewer.tcl:18: [WARN] (import) package require 'htmlparse': not found in provided packages or stdlib
 third_party/tcllib/examples/htmlparse/webviewer.tcl:20: [WARN] (import) package require 'autoproxy': not found in provided packages or stdlib
-third_party/tcllib/examples/htmlparse/webviewer.tcl:48: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/examples/htmlparse/webviewer.tcl:53: [WARN] (variables) Variable '$level' used but never defined in this scope
 third_party/tcllib/examples/htmlparse/webviewer.tcl:53: [WARN] (variables) Variable '$level' used but never defined in this scope
-third_party/tcllib/examples/htmlparse/webviewer.tcl:75: [ERROR] (procs) upvar: odd number of varName/localAlias pairs after level
 third_party/tcllib/examples/htmlparse/webviewer.tcl:76: [WARN] (variables) Variable '$state' used but never defined in this scope
 third_party/tcllib/examples/htmlparse/webviewer.tcl:77: [WARN] (expressions) Unknown math function 'meta()' in expression
 third_party/tcllib/examples/htmlparse/webviewer.tcl:78: [WARN] (variables) Variable '$meta' used but never defined in this scope
@@ -51377,7 +51240,6 @@ third_party/tcllib/examples/mime/maildemo.tcl:61: [WARN] (variables) Variable '$
 third_party/tcllib/examples/mime/maildemo.tcl:61: [WARN] (variables) Variable '$argv' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:10: [WARN] (import) package require 'file::home': not found in provided packages or stdlib
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:19: [WARN] (expressions) Unknown math function 'options()' in expression
-third_party/tcllib/examples/mime/mbot/impersonal.tcl:29: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:29: [WARN] (variables) Variable '$fd' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:31: [WARN] (variables) Variable '$fd' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:40: [WARN] (expressions) Unknown math function 'props()' in expression
@@ -51593,7 +51455,6 @@ third_party/tcllib/examples/mime/mbot/impersonal.tcl:245: [WARN] (variables) Var
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:253: [WARN] (expressions) Unknown math function 'arg()' in expression
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:254: [WARN] (variables) Variable '$index' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:267: [WARN] (variables) Variable '$arg' used but never defined in this scope
-third_party/tcllib/examples/mime/mbot/impersonal.tcl:274: [ERROR] (builtins) 'file split' accepts at most 1 argument(s), got 2
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:278: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:281: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:281: [WARN] (variables) Variable '$line' used but never defined in this scope
@@ -51603,7 +51464,6 @@ third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [WARN] (variables) Var
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [WARN] (variables) Variable '$stat' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [WARN] (variables) Variable '$line' used but never defined in this scope
-third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [ERROR] (builtins) 'lrange' accepts at most 3 argument(s), got 4
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:289: [WARN] (variables) Variable '$line' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/impersonal.tcl:295: [WARN] (variables) Variable '$index' used but never defined in this scope
@@ -51650,7 +51510,6 @@ third_party/tcllib/examples/mime/mbot/personal.tcl:179: [WARN] (variables) Varia
 third_party/tcllib/examples/mime/mbot/personal.tcl:182: [WARN] (variables) Variable '$result' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:183: [WARN] (variables) Variable '$result' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:191: [WARN] (expressions) Unknown math function 'options()' in expression
-third_party/tcllib/examples/mime/mbot/personal.tcl:201: [ERROR] (builtins) 'puts' accepts at most 3 argument(s), got 4
 third_party/tcllib/examples/mime/mbot/personal.tcl:201: [WARN] (variables) Variable '$fd' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:203: [WARN] (variables) Variable '$fd' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:233: [WARN] (variables) unset 'aprops': variable not defined in current scope
@@ -51985,7 +51844,7 @@ third_party/tcllib/examples/mime/mbot/personal.tcl:526: [WARN] (variables) Varia
 third_party/tcllib/examples/mime/mbot/personal.tcl:526: [WARN] (variables) Variable '$len' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:526: [WARN] (variables) Variable '$len' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:531: [WARN] (variables) unset 'aprops': variable not defined in current scope
-third_party/tcllib/examples/mime/mbot/personal.tcl:534: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
+third_party/tcllib/examples/mime/mbot/personal.tcl:534: [WARN] (variables) Variable '$aprops' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:539: [WARN] (variables) Variable '$idD' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:539: [WARN] (variables) Variable '$idD' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:567: [WARN] (variables) Variable '$inD' used but never defined in this scope
@@ -52001,20 +51860,12 @@ third_party/tcllib/examples/mime/mbot/personal.tcl:595: [WARN] (variables) Varia
 third_party/tcllib/examples/mime/mbot/personal.tcl:596: [WARN] (variables) Variable '$map' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:596: [WARN] (variables) Variable '$map' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:606: [WARN] (expressions) Unknown math function 'mapping()' in expression
-third_party/tcllib/examples/mime/mbot/personal.tcl:610: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/examples/mime/mbot/personal.tcl:610: [WARN] (procs) Call to unknown command 'processFolder'
-third_party/tcllib/examples/mime/mbot/personal.tcl:638: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/examples/mime/mbot/personal.tcl:639: [WARN] (variables) unset 'aprops': variable not defined in current scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:642: [WARN] (variables) Variable '$aprops' used but never defined in this scope
 third_party/tcllib/examples/mime/mbot/personal.tcl:643: [WARN] (variables) Variable '$aprops' used but never defined in this scope
-third_party/tcllib/examples/mime/mbot/personal.tcl:645: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/examples/mime/mbot/personal.tcl:664: [WARN] (expressions) Unknown math function 'options()' in expression
 third_party/tcllib/examples/mime/mbot/personal.tcl:664: [WARN] (expressions) Unknown math function 'params()' in expression
-third_party/tcllib/examples/mime/mbot/personal.tcl:689: [ERROR] (procs) 'alladdrs' accepts at most 2 argument(s), got 3
-third_party/tcllib/examples/mime/mbot/personal.tcl:691: [ERROR] (builtins) 'for' accepts at most 4 argument(s), got 6
-third_party/tcllib/examples/mime/mbot/personal.tcl:691: [WARN] (expressions) 'for' cond argument should be braced: use {cond}
-third_party/tcllib/examples/mime/mbot/personal.tcl:691: [WARN] (expressions) 'for' body argument should be braced: use {body}
-third_party/tcllib/examples/mime/mbot/personal.tcl:696: [ERROR] (builtins) 'set' accepts at most 2 argument(s), got 3
 third_party/tcllib/examples/mime/mbot/personal.tcl:771: [WARN] (expressions) Unknown math function 'options()' in expression
 third_party/tcllib/examples/mime/mbot/personal.tcl:781: [WARN] (expressions) Unknown math function 'options()' in expression
 third_party/tcllib/examples/mime/mbot/personal.tcl:782: [WARN] (expressions) Unknown math function 'options()' in expression

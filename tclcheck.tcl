@@ -8,6 +8,7 @@
 #   --dir <path>         Check all .tcl files in directory recursively
 #   --severity <level>   Minimum severity to report: error|warn|info (default: warn)
 #   --no-style           Suppress INFO-level style checks
+#   --syntax-only        Run syntax scan only (skip semantic checks)
 #   --suppress <ids>     Comma-separated check IDs to suppress
 #   --json               Output results as JSON array
 #   --help               Show this help
@@ -38,6 +39,7 @@ proc parseArgs {argv} {
     set opts {
         severity warn
         noStyle  0
+        syntaxOnly 0
         suppress {}
         json     0
         dirs     {}
@@ -62,6 +64,9 @@ proc parseArgs {argv} {
             }
             --no-style {
                 dict set opts noStyle 1
+            }
+            --syntax-only {
+                dict set opts syntaxOnly 1
             }
             --suppress {
                 incr i
@@ -91,6 +96,7 @@ Options:
   --dir <path>         Check all .tcl files in directory recursively
   --severity <level>   Minimum severity: error|warn|info (default: warn)
   --no-style           Suppress INFO-level style checks
+    --syntax-only        Run syntax scan only (skip semantic checks)
   --suppress <ids>     Comma-separated check IDs to suppress
   --json               Output results as JSON array
   --help               Show this help}
@@ -144,7 +150,10 @@ proc firstPass {files issuesVar} {
 # Walk a script collecting proc/namespace/package definitions.
 proc collectDefinitions {src filename issuesVar {baseLine 1}} {
     upvar 1 $issuesVar issues
-    set cmds [::tclcheck::parser::parseScript $src $filename $baseLine issues]
+    # Use a local sink for first-pass parse issues so that parse errors are
+    # not double-reported; the second pass captures them definitively.
+    set _firstPassParseIssues {}
+    set cmds [::tclcheck::parser::parseScript $src $filename $baseLine _firstPassParseIssues]
 
     foreach cmdRecord $cmds {
         lassign $cmdRecord lineNum words
@@ -223,6 +232,7 @@ proc secondPass {files opts issuesVar} {
     upvar 1 $issuesVar issues
     set suppressed [dict get $opts suppress]
     set noStyle    [dict get $opts noStyle]
+    set syntaxOnly [dict get $opts syntaxOnly]
 
     foreach filename $files {
         if {![file readable $filename]} continue
@@ -238,6 +248,12 @@ proc secondPass {files opts issuesVar} {
         set hasErrors 0
         foreach iss $syntaxIssues {
             if {[lindex $iss 2] eq "ERROR"} { set hasErrors 1; break }
+        }
+        if {$syntaxOnly} {
+            # Parse once in syntax-only mode to catch tokenizer-level syntax
+            # errors while skipping semantic checks that create false positives.
+            ::tclcheck::parser::parseScript $src $filename 1 issues
+            continue
         }
         if {$hasErrors} continue
 
@@ -335,8 +351,7 @@ proc _analyzeNestedSubcommands {lineNum words filename issuesVar} {
             set inner [string range $word 1 end-1]
         } elseif {[::tclcheck::parser::isBraceWord $word]} {
             set maybe [::tclcheck::parser::stripBraces $word]
-            if {$maybe ne "" && [string index $maybe 0] eq "\[" &&
-                [string index $maybe end] eq "\]"} {
+            if {$maybe ne "" && [_isSingleBracketSubst $maybe]} {
                 set inner [string range $maybe 1 end-1]
             }
         }
@@ -348,6 +363,63 @@ proc _analyzeNestedSubcommands {lineNum words filename issuesVar} {
     }
 
     return $nestedIssues
+}
+
+proc _isSingleBracketSubst {text} {
+    set len [string length $text]
+    if {$len < 2} { return 0 }
+    if {[string index $text 0] ne "\["} { return 0 }
+    if {[string index $text end] ne "\]"} { return 0 }
+
+    set depth 0
+    set braceDepth 0
+    set inDouble 0
+
+    for {set i 0} {$i < $len} {incr i} {
+        set ch [string index $text $i]
+
+        if {$ch eq "\\"} {
+            incr i
+            continue
+        }
+
+        if {$inDouble} {
+            if {$ch eq "\""} {
+                set inDouble 0
+            }
+            continue
+        }
+
+        if {$ch eq "\""} {
+            set inDouble 1
+            continue
+        }
+
+        if {$ch eq "\{"} {
+            incr braceDepth
+            continue
+        }
+        if {$ch eq "\}" && $braceDepth > 0} {
+            incr braceDepth -1
+            continue
+        }
+
+        if {$braceDepth > 0} {
+            continue
+        }
+
+        if {$ch eq "\["} {
+            incr depth
+            continue
+        }
+        if {$ch eq "\]"} {
+            incr depth -1
+            if {$depth == 0} {
+                return [expr {$i == ($len - 1)}]
+            }
+        }
+    }
+    return 0
 }
 
 proc _analyzeProcBody {lineNum words filename issuesVar} {
@@ -540,6 +612,7 @@ proc filterIssues {issues opts} {
     }
 
     set result {}
+    set seen {}
     foreach iss $issues {
         lassign $iss file line sev checkId msg
         if {[severityRank $sev] < $minRank} continue
@@ -549,6 +622,12 @@ proc filterIssues {issues opts} {
         if {$checkId ne "syntax" && [dict exists $syntaxErrLines "$file:$line"]} {
             continue
         }
+
+        set key [list $file $line $sev $checkId $msg]
+        if {[dict exists $seen $key]} {
+            continue
+        }
+        dict set seen $key 1
 
         lappend result $iss
     }
@@ -599,14 +678,16 @@ proc main {argv} {
     ::tclcheck::imports::reset
     ::tclcheck::checks::procs::reset
 
-    # First pass: collect all definitions
-    ::tclcheck::scope::reset
-    ::tclcheck::scope::push global "::" "" 0
-    firstPass $files issues
-    ::tclcheck::scope::pop
+    if {![dict get $opts syntaxOnly]} {
+        # First pass: collect all definitions
+        ::tclcheck::scope::reset
+        ::tclcheck::scope::push global "::" "" 0
+        firstPass $files issues
+        ::tclcheck::scope::pop
 
-    # Reset scope for second pass
-    ::tclcheck::scope::reset
+        # Reset scope for second pass
+        ::tclcheck::scope::reset
+    }
 
     # Second pass: analysis
     secondPass $files $opts issues
